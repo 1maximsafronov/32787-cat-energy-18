@@ -31,15 +31,15 @@
       <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="request-form__wrapper">
           <div class="request-form__column">
-            <p class="request-form__name">
+            <p class="request-form__name custom-text-input">
               <label for="cat-name">Имя:*</label>
               <input class="custom-input-field" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
             </p>
-            <p class="request-form__weight">
+            <p class="request-form__weight custom-text-input">
               <label for="cat-weight">Вес (кг):*</label>
               <input class="custom-input-field" type="number" name="cat-weight" placeholder="7" id="cat-weight">
             </p>
-            <p class="request-form__age">
+            <p class="request-form__age custom-text-input">
               <label for="cat-age">Возраст (лет):</label>
               <input class="custom-input-field" type="number" name="cat-age" placeholder="7" id="cat-age">
             </p>
@@ -62,20 +62,26 @@
         </div>
         <fieldset class="request-form__contacts">
           <legend class="request-form__title">Контактные данные (владельца кота)</legend>
+          <!-- ну сделал такую разметку более очевидные колонки.
+                Колонки есть на десктопной версии 2 колонки по 570px в первом разделе с именем и радиобатаннами и 2 колонки в блоке Контактных данных. -->
           <div class="request-form__wrapper">
-            <p class="request-form__column">
-              <label for="cat-email">E-mail:*</label>
-              <input class="custom-input-field" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
-            </p>
-            <p class="request-form__column">
-              <label for="cat-phone">Телефон:*</label>
-              <input class="custom-input-field" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
-            </p>
+            <div class="request-form__column">
+              <p class="request-form__email custom-text-input">
+                <label for="cat-email">E-mail:*</label>
+                <input class="custom-input-field" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
+              </p>
+            </div>
+            <div class="request-form__column">
+              <p class="request-form__phone custom-text-input">
+                <label for="cat-phone">Телефон:*</label>
+                <input class="custom-input-field" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
+              </p>
+            </div>
           </div>
         </fieldset>
         <div class="request-form__comment">
           <h2 class="request-form__title">Комментарий</h2>
-          <textarea class="request-form__commetn-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="request-form__comment-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <fieldset>
           <legend class="request-form__title">Дополнительно</legend>
@@ -109,7 +115,7 @@
           <b class="contacts__slogan">Приглашаем к&nbsp;сотрудничество дилеров!</b>
           <address class="contacts__address">
             <p class="contacts__address-text">
-              ул. Бльшая<br>
+              ул. Большая<br>
               Конюшенная, д 19/8
             </p>
             <p class="contacts__address-text">
@@ -118,7 +124,7 @@
           </address>
         </div>
         <p class="contacts__map">
-          <img class="contacts__map-image" src="img/map.jpg" alt="Мы находимся по адрессу ул. Бльшая Конюшенная, д 19/8">
+          <img class="contacts__map-image" src="img/map.jpg" alt="Мы находимся по адрессу ул. Большая Конюшенная, д 19/8">
         </p>
       </section>
       <div class="main-footer__wrapper">
