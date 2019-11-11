@@ -28,68 +28,81 @@
       <h1 class="page-title">Подбор программы</h1>
       <p>Заполните анкету и мы подберем
 программу питания для вашего кота</p>
-      <form class="https://echo.htmlacademy.ru" action="index.html" method="post">
-        <p>
-          <label for="cat-name">Имя:*</label>
-          <input type="text" name="cat-name" placeholder="Барсик" id="cat-name">
-        </p>
-        <p>
-          <label for="cat-weight">Вес (кг):*</label>
-          <input type="number" name="cat-weight" placeholder="7" id="cat-weight">
-        </p>
-        <p>
-          <label for="cat-age">Возраст (лет):</label>
-          <input type="number" name="cat-age" placeholder="7" id="cat-age">
-        </p>
-
-        <input type="radio" name="purpose" value="weight-loss" id="weight-loss" checked>
-        <label for="weight-loss">Похудение</label>
-        <input type="radio" name="purpose" value="weight-gain" id="weight-gain">
-        <label for="weight-gain">Набор массы</label>
-        <input type="radio" name="purpose" value="idk" id="idk">
-        <label for="idk">Не знаю (нужен ваш совет)</label>
-
-        <fieldset>
-          <legend>Контактные данные (владельца кота)</legend>
-          <p>
-            <label for="cat-email">E-mail:*</label>
-            <input type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
-          </p>
-          <p>
-            <label for="cat-phone">Телефон:*</label>
-            <input type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
-          </p>
+      <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="request-form__wrapper">
+          <div class="request-form__column">
+            <p class="request-form__name">
+              <label for="cat-name">Имя:*</label>
+              <input class="custom-input-field" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
+            </p>
+            <p class="request-form__weight">
+              <label for="cat-weight">Вес (кг):*</label>
+              <input class="custom-input-field" type="number" name="cat-weight" placeholder="7" id="cat-weight">
+            </p>
+            <p class="request-form__age">
+              <label for="cat-age">Возраст (лет):</label>
+              <input class="custom-input-field" type="number" name="cat-age" placeholder="7" id="cat-age">
+            </p>
+          </div>
+          <fieldset class="request-form__column">
+            <legend class="visually-hidden">Цель питания.</legend>
+            <p class="request-form__radio">
+              <input class="visually-hidden" type="radio" name="purpose" value="weight-loss" id="weight-loss" checked>
+              <label class="custom-radio" for="weight-loss">Похудение</label>
+            </p>
+            <p class="request-form__radio">
+              <input class="visually-hidden" type="radio" name="purpose" value="weight-gain" id="weight-gain">
+              <label class="custom-radio" for="weight-gain">Набор массы</label>
+            </p>
+            <p class="request-form__radio">
+              <input class="visually-hidden" type="radio" name="purpose" value="idk" id="idk">
+              <label class="custom-radio" for="idk">Не знаю (нужен ваш совет)</label>
+            </p>
+          </fieldset>
+        </div>
+        <fieldset class="request-form__contacts">
+          <legend class="request-form__title">Контактные данные (владельца кота)</legend>
+          <div class="request-form__wrapper">
+            <p class="request-form__column">
+              <label for="cat-email">E-mail:*</label>
+              <input class="custom-input-field" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
+            </p>
+            <p class="request-form__column">
+              <label for="cat-phone">Телефон:*</label>
+              <input class="custom-input-field" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
+            </p>
+          </div>
         </fieldset>
+        <div class="request-form__comment">
+          <h2 class="request-form__title">Комментарий</h2>
+          <textarea class="request-form__commetn-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
         <fieldset>
-          <legend>Комментарий</legend>
-          <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset>
-          <legend>Дополнительно</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="sweetener" id="sweetener" checked>
-              <label for="sweetener">Сахарозаменитель</label>
+          <legend class="request-form__title">Дополнительно</legend>
+          <ul class="request-form__wrapper">
+            <li class="request-form__checkbox">
+              <input class="visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+              <label class="custom-checkbox" for="sweetener">Сахарозаменитель</label>
             </li>
-            <li>
-              <input type="checkbox" name="drinking-water" id="drinking-water">
-              <label for="drinking-water">Питьевая вода</label>
+            <li class="request-form__checkbox">
+              <input class="visually-hidden" type="checkbox" name="drinking-water" id="drinking-water">
+              <label class="custom-checkbox" for="drinking-water">Питьевая вода</label>
             </li>
-            <li>
-              <input type="checkbox" name="milk" id="milk">
-              <label for="milk">Молоко</label>
+            <li class="request-form__checkbox">
+              <input class="visually-hidden" type="checkbox" name="milk" id="milk">
+              <label class="custom-checkbox" for="milk">Молоко</label>
             </li>
-            <li>
-              <input type="checkbox" name="vitamins" id="vitamins">
-              <label for="vitamins">Витамины</label>
+            <li class="request-form__checkbox">
+              <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+              <label class="custom-checkbox" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
-        <button class="btn" type="submit" name="send-order">Отправить заявку</button>
-        <small>* — Обязательные поля</small>
+        <button class="request-form__btn btn" type="submit" name="send-order">Отправить заявку</button>
+        <small class="request-form__legend">* — Обязательные поля</small>
       </form>
     </main>
-		<footer class="main-footer">
+    <footer class="main-footer">
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="contacts__desc">
