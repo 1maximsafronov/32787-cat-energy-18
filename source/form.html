@@ -17,11 +17,17 @@
             <span class="visually-hiden">Меню сайта</span>
           </button>
         </div>
-        <div class="main-nav__site-nav site-nav">
-          <a class="site-nav__link" href="index.html">Главная</a>
-          <a class="site-nav__link" href="catalog.html">Каталог продукции</a>
-          <a class="site-nav__link site-nav__link--current">Подбор программы</a>
-        </div>
+        <ul class="main-nav__site-nav site-nav">
+          <li>
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="site-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li>
+            <a class="site-nav__link site-nav__link--current">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -31,17 +37,17 @@
       <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="request-form__wrapper">
           <div class="request-form__column">
-            <p class="request-form__name custom-text-input">
+            <p class="request-form__name custom-text-field">
               <label for="cat-name">Имя:*</label>
-              <input class="custom-input-field" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
+              <input class="custom-text-field__input" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
             </p>
-            <p class="request-form__weight custom-text-input">
+            <p class="request-form__weight custom-text-field">
               <label for="cat-weight">Вес (кг):*</label>
-              <input class="custom-input-field" type="number" name="cat-weight" placeholder="7" id="cat-weight">
+              <input class="custom-text-field__input" type="number" name="cat-weight" placeholder="7" id="cat-weight">
             </p>
-            <p class="request-form__age custom-text-input">
+            <p class="request-form__age custom-text-field">
               <label for="cat-age">Возраст (лет):</label>
-              <input class="custom-input-field" type="number" name="cat-age" placeholder="7" id="cat-age">
+              <input class="custom-text-field__input" type="number" name="cat-age" placeholder="7" id="cat-age">
             </p>
           </div>
           <fieldset class="request-form__column">
@@ -66,15 +72,15 @@
                 Колонки есть на десктопной версии 2 колонки по 570px в первом разделе с именем и радиобатаннами и 2 колонки в блоке Контактных данных. -->
           <div class="request-form__wrapper">
             <div class="request-form__column">
-              <p class="request-form__email custom-text-input">
+              <p class="request-form__email custom-text-field">
                 <label for="cat-email">E-mail:*</label>
-                <input class="custom-input-field" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
+                <input class="custom-text-field__input" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
               </p>
             </div>
             <div class="request-form__column">
-              <p class="request-form__phone custom-text-input">
+              <p class="request-form__phone custom-text-field">
                 <label for="cat-phone">Телефон:*</label>
-                <input class="custom-input-field" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
+                <input class="custom-text-field__input" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
               </p>
             </div>
           </div>
