@@ -1,10 +1,23 @@
+html {
+  box-sizing: border-box;
+  min-width: 960px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background: #ffffff;
   color: #000000;
   margin: 0;
   padding: 0;
+  font-family: "Arial", sans-serif;
 }
 
+@import "blocks/container.scss";
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
@@ -24,4 +37,4 @@ body {
 @import "blocks/purpose.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/social.scss";
-@import "blocks/social.scss";
+@import "blocks/visually-hidden.scss";
