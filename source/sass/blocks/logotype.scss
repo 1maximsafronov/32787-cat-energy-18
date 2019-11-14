@@ -1,1 +1,24 @@
 // logotype
+.logotype {
+  display: block;
+  width: 191px;
+  height: 38px;
+}
+
+.logotype__image {
+  max-width: 100%;
+}
+
+@media ($tablet-width) {
+  .logotype {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media ($desktop-width) {
+  .logotype {
+    width: 202px;
+    height: 59px;
+  }
+}

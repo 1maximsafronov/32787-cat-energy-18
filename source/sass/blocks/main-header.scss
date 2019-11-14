@@ -1,1 +1,20 @@
 // main-header
+.main-header {
+  padding-top: 11px;
+}
+
+@media ($tablet-width) {
+  .main-header {
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media ($desktop-width) {
+  .main-header {
+    padding-top: 54px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
