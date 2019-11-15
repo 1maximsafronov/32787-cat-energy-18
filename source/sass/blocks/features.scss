@@ -1,7 +1,6 @@
 // features
 .features {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include container;
 }
 
 .features__title {
@@ -19,6 +18,7 @@
 .features__item {
   margin-bottom: 20px;
   display: flex;
+  position: relative;
 }
 
 .features__item::before {
@@ -49,12 +49,15 @@
   background-image: url("../img/advantage-clock@1x.png");
 }
 
-@media ($tablet-width) {
-  .features {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+.features__number {
+  display: none;
+}
 
+.features__desc {
+  margin: 0;
+}
+
+@media ($tablet-width) {
   .features__list {
     display: flex;
     justify-content: space-between;
@@ -62,25 +65,32 @@
   }
 
   .features__item {
-    margin-bottom: 0;
     display: block;
     width: 325px;
+    margin-bottom: 139px;
   }
 
   .features__item::before {
     width: 80px;
-    height: 60px;
+    height: 80px;
     margin-right: 0;
     margin-bottom: 60px;
+  }
+
+  .features__number {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -26px;
+    left: 124px;
   }
 }
 
 @media ($tablet-width) {
-  .features {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
   .features__item {
     width: 245px;
   }

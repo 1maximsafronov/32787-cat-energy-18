@@ -2,8 +2,8 @@
 
 .purpose {
   background-color: #ffffff;
-  padding-left: 20px;
-  padding-right: 20px;
+
+  @include container;
 }
 
 .purpose__list {
@@ -49,12 +49,6 @@
 }
 
 @media ($tablet-width) {
-  .purpose {
-    background-color: #ffffff;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .purpose__item {
     padding-top: 80px;
     padding-bottom: 60px;
@@ -83,11 +77,6 @@
 
 
 @media ($desktop-width) {
-  .purpose {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
   .purpose__list {
     justify-content: space-between;
     display: flex;

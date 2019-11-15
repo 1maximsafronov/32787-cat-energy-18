@@ -5,3 +5,9 @@
   color: #111111;
   font-family: "Oswald", "Arial", sans-serif;
 }
+
+@media ($tablet-width) {
+  .section-title {
+    font-size: 60px;
+  }
+}
