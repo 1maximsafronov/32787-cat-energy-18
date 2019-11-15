@@ -41,7 +41,7 @@
 программу питания для вашего кота</p>
       <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="request-form__wrapper">
-          <div class="request-form__column">
+          <div class="request-form__section request-form__column">
             <p class="request-form__name custom-text-field">
               <label for="cat-name">Имя:*</label>
               <input class="custom-text-field__input" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
@@ -51,11 +51,11 @@
               <input class="custom-text-field__input" type="number" name="cat-weight" placeholder="7" id="cat-weight">
             </p>
             <p class="request-form__age custom-text-field">
-              <label for="cat-age">Возраст (лет):</label>
+              <label for="cat-age">Возраст&nbsp;(лет):</label>
               <input class="custom-text-field__input" type="number" name="cat-age" placeholder="7" id="cat-age">
             </p>
           </div>
-          <fieldset class="request-form__column">
+          <fieldset class="request-form__section request-form__column">
             <legend class="visually-hidden">Цель питания.</legend>
             <p class="request-form__radio">
               <input class="visually-hidden" type="radio" name="purpose" value="weight-loss" id="weight-loss" checked>
@@ -71,7 +71,7 @@
             </p>
           </fieldset>
         </div>
-        <fieldset class="request-form__contacts">
+        <fieldset class="request-form__section request-form__section--contacts">
           <legend class="request-form__title">Контактные данные (владельца кота)</legend>
           <!-- ну сделал такую разметку более очевидные колонки.
                 Колонки есть на десктопной версии 2 колонки по 570px в первом разделе с именем и радиобатаннами и 2 колонки в блоке Контактных данных. -->
@@ -90,30 +90,33 @@
             </div>
           </div>
         </fieldset>
-        <div class="request-form__comment">
+        <div class="request-form__section request-form__section--comment">
           <h2 class="request-form__title">Комментарий</h2>
-          <textarea class="request-form__comment-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <p class="custom-text-field">
+            <label class="visually-hidden">Напишите нам про кота</label>
+            <textarea class="request-form__comment-text custom-text-field__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
         </div>
-        <fieldset>
+        <fieldset class="request-form__section request-form__section--addition">
           <legend class="request-form__title">Дополнительно</legend>
-          <ul class="request-form__wrapper">
-            <li class="request-form__checkbox">
+          <div class="request-form__wrapper">
+            <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="custom-checkbox" for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="request-form__checkbox">
+            </p>
+            <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="drinking-water" id="drinking-water">
               <label class="custom-checkbox" for="drinking-water">Питьевая вода</label>
-            </li>
-            <li class="request-form__checkbox">
+            </p>
+            <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="milk" id="milk">
               <label class="custom-checkbox" for="milk">Молоко</label>
-            </li>
-            <li class="request-form__checkbox">
+            </p>
+            <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
               <label class="custom-checkbox" for="vitamins">Витамины</label>
-            </li>
-          </ul>
+            </p>
+          </div>
         </fieldset>
         <button class="request-form__btn btn" type="submit" name="send-order">Отправить заявку</button>
         <small class="request-form__legend">* — Обязательные поля</small>

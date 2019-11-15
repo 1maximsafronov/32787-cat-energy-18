@@ -2,3 +2,12 @@
 .footer-logotype {
   display: block;
 }
+
+.footer-logotype:hover,
+.footer-logotype:focus {
+  opacity: 0.8;
+}
+
+.footer-logotype:active {
+  opacity: 0.6;
+}

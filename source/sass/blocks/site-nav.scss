@@ -21,6 +21,15 @@
   text-decoration: none;
 }
 
+.site-nav__link:hover,
+.site-nav__link:focus {
+  opacity: 0.6;
+}
+
+.site-nav__link:active {
+  opacity: 0.3;
+}
+
 @media ($tablet-width) {
   .site-nav {
     display: flex;

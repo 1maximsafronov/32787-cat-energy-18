@@ -6,7 +6,6 @@
 }
 
 .social__link {
-  display: block;
   margin-right: 38px;
   text-decoration: none;
 }
@@ -17,6 +16,17 @@
 
 .social__icon {
   fill: #666666;
+}
+
+.social__icon:hover,
+.social__icon:focus {
+  fill: #68b738;
+}
+
+.social__icon:active {
+  opacity: 0.3;
+
+  fill: #68b738;
 }
 
 .social__icon--vk {
