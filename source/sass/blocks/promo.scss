@@ -1,1 +1,21 @@
 // promo
+.promo__picture {
+  width: 280px;
+  height: 270px;
+  margin: 0;
+}
+
+
+@media ($tablet-width) {
+  .promo__picture {
+    width: 709px;
+    height: 609px;
+  }
+}
+
+@media ($desktop-width) {
+  .promo__picture {
+    width: 552px;
+    height: 499px;
+  }
+}

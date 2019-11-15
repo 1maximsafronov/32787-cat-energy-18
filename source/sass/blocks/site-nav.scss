@@ -35,7 +35,6 @@
 
   .site-nav__link {
     color: #222222;
-    display: block;
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
@@ -59,6 +58,7 @@
 
 @media ($desktop-width) {
   .site-nav {
-    display: flex;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
   }
 }

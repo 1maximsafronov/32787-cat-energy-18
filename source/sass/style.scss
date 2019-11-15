@@ -16,12 +16,18 @@ body {
   padding: 0;
   font-family: "Arial", sans-serif;
 }
+
+img {
+  max-width: 100%;
+}
+
 @import "variables.scss";
 @import "blocks/container.scss";
 @import "fonts.scss";
 @import "mixins.scss";
 @import "blocks/main-header.scss";
 @import "blocks/btn.scss";
+@import "blocks/section-title.scss";
 @import "blocks/contacts.scss";
 @import "blocks/controls.scss";
 @import "blocks/copyright.scss";
