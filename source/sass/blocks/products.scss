@@ -1,10 +1,11 @@
 .products__list {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .products__item {
-  @include container;
   padding-bottom: 25px;
   border-bottom: 1px solid #ededed;
+
+  @include container;
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи - Каталог продукции</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,8 +13,8 @@
         <div class="main-nav__wrapper">
           <a class="main-header__logo logotype" href="index.html">
             <picture>
-              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
               <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
               <img class="logotype__image" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
             </picture>
           </a>
@@ -41,8 +42,8 @@
           <li class="products__item product">
             <a class="product__link" href="#">
               <picture>
-                <source srcset="img/chicken-small-tablet@1x.png" media="(min-width: 768px)">
                 <source srcset="img/chicken-small-desktop@1x.png" media="(min-width: 1300px)">
+                <source srcset="img/chicken-small-tablet@1x.png" media="(min-width: 768px)">
                 <img class="product__picture" src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy PRO Курица 500 грамм">
               </picture>
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -216,7 +217,7 @@
           <li class="products__item product products__item product--show-all">
             <h3>Показать еще 100500 товаров</h3>
             <p class="products__desc">На самом деле вкусов гораздо больше!</p>
-            <a href="#" class="products__show-all btn btn--gray">Показать все</a>
+            <a class="products__show-all btn btn--gray" href="#">Показать все</a>
           </li>
         </ul>
       </section>

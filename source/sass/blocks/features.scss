@@ -8,29 +8,29 @@
 }
 
 .features__list {
-  list-style: none;
   padding: 0;
   color: #444444;
+  list-style: none;
   font-size: 14px;
   line-height: 18px;
 }
 
 .features__item {
-  margin-bottom: 20px;
-  display: flex;
   position: relative;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .features__item::before {
-  content: "";
   display: block;
-  width: 60px;
+  margin-right: 20px;
   min-width: 60px;
+  width: 60px;
   height: 60px;
   background-color: #68b738;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  margin-right: 20px;
+  content: "";
 }
 
 .features__item--nutrients::before {
@@ -60,33 +60,33 @@
 @media ($tablet-width) {
   .features__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .features__item {
     display: block;
-    width: 325px;
     margin-bottom: 139px;
+    width: 325px;
   }
 
   .features__item::before {
-    width: 80px;
-    height: 80px;
     margin-right: 0;
     margin-bottom: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .features__number {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 281px;
-    line-height: 281px;
-    color: #f2f2f2;
-    display: block;
     position: absolute;
-    z-index: -1;
     top: -26px;
     left: 124px;
+    z-index: -1;
+    display: block;
+    color: #f2f2f2;
+    font-size: 281px;
+    font-family: "Oswald", "Arial", sans-serif;
+    line-height: 281px;
   }
 }
 
