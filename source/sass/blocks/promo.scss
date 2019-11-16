@@ -5,19 +5,16 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  color: #ffffff;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-
-  @include container;
 }
 
 .promo__title {
   margin: 0;
   margin-bottom: 18px;
   font-weight: 400;
-  font-size: 36px;
   line-height: 36px;
+  color: #ffffff;
 }
 
 .promo__text {
@@ -26,6 +23,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+  color: #ffffff;
 }
 
 .promo__picture {
@@ -49,14 +47,14 @@
     padding-right: 120px;
     padding-left: 120px;
     background-image: none;
-    color: #111111;
+
     text-align: left;
   }
 
   .promo__title {
     margin-bottom: 35px;
     width: 450px;
-    font-size: 60px;
+    color: #111111;
     line-height: 60px;
   }
 
@@ -64,6 +62,7 @@
     margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
+    color: #111111;
   }
 
   .promo__picture {

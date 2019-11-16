@@ -5,14 +5,14 @@
 
 .custom-text-field__input {
   flex-grow: 1;
-  border: 1px solid #f2f2f2;
   padding: 13px 15px;
+  min-width: 172px;
+  outline: none;
+  border: 1px solid #f2f2f2;
   color: #444444;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
-  outline: none;
-  min-width: 172px;
 }
 
 .custom-text-field__input:hover {
@@ -20,13 +20,14 @@
 }
 
 .custom-text-field__input:focus {
-  border: 2px solid #444444;
   padding: 12px 14px;
+  border: 2px solid #444444;
 }
 
 @media ($tablet-width) {
   .custom-text-field__input {
     padding: 15px 20px;
+    height: 52px;
     font-size: 20px;
     line-height: 20px;
   }
