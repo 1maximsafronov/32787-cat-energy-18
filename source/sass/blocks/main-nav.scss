@@ -1,9 +1,4 @@
 // main-nav
-.main-nav {
-  display: flex;
-  flex-direction: column;
-}
-
 
 .main-nav__wrapper {
   display: flex;
@@ -44,8 +39,8 @@
 
 @media ($tablet-width) {
   .main-nav {
+    display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-between;
   }
 
