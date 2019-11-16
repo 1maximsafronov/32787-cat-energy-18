@@ -9,7 +9,7 @@
 
 .contacts__slogan {
   width: 140px;
-  color: #111111;
+  color: $text-black;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
@@ -18,7 +18,7 @@
 }
 
 .contacts__address {
-  color: #444444;
+  color: $text-dark-gray;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
@@ -75,7 +75,7 @@
     position: relative;
     z-index: 2;
     width: 570px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .contacts__map {

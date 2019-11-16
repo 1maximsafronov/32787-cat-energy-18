@@ -3,8 +3,8 @@
   display: block;
   padding: 10px;
   border: none;
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: $bg-green;
+  color: $white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -12,31 +12,31 @@
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 20px;
-}
 
-.btn:hover,
-.btn:focus {
-  background-color: #5eaa2f;
-}
+  &:hover,
+  &:focus {
+    background-color: $bg-gree-dark;
+  }
 
-.btn:active {
-  background-color: #5eaa2f;
-  color: rgba(#ffffff, 0.3);
-}
+  &:active {
+    background-color: $bg-gree-dark;
+    color: rgba($white, 0.3);
+  }
 
-.btn--gray {
-  background-color: #f2f2f2;
-  color: #444444;
-}
+  &--gray {
+    background-color: $bg-gray;
+    color: $text-dark-gray;
 
-.btn--gray:hover,
-.btn--gray:focus {
-  background-color: #ebebeb;
-}
+    &:hover,
+    &:focus {
+      background-color: $bg-light-gray;
+    }
 
-.btn--gray:active {
-  background-color: #ebebeb;
-  color: rgba(#444444, 0.3);
+    &:active {
+      background-color: $bg-light-gray;
+      color: rgba($text-dark-gray, 0.3);
+    }
+  }
 }
 
 @media ($tablet-width) {

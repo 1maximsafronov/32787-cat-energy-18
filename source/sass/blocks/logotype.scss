@@ -3,15 +3,16 @@
   display: block;
   width: 191px;
   height: 38px;
-}
 
-.logotype:hover,
-.logotype:focus {
-  opacity: 0.8;
-}
 
-.logotype:active {
-  opacity: 0.6;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media ($tablet-width) {

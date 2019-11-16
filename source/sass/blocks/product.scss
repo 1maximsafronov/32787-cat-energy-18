@@ -24,7 +24,7 @@
 }
 
 .product__title {
-  color: #111111;
+  color: $text-black;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
@@ -39,7 +39,7 @@
 .product__properties {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $text-dark-gray;
   border-collapse: collapse;
   width: 100%;
 }
@@ -55,8 +55,8 @@
 
 @media ($tablet-width) {
   .product {
-    background-color: #f2f2f2;
-    box-shadow: inset 0 82px 0 0 #ffffff;
+    background-color: $bg-gray;
+    box-shadow: inset 0 82px 0 0 $white;
     padding-bottom: 40;
     padding-left: 37px;
     padding-right: 37px;
@@ -93,7 +93,7 @@
   .product__properties td {
     padding-bottom: 5px;
     padding-top: 5px;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-gray;
   }
 }
 

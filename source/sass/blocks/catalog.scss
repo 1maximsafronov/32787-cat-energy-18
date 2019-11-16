@@ -13,11 +13,24 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -60px;
+    justify-content: space-between;
   }
 
   .catalog__item {
-    margin-right: 60px;
     margin-bottom: 60px;
+  }
+}
+
+@media ($desktop-width) {
+  .catalog__list {
+    justify-content: flex-start;
+  }
+
+  .catalog__item {
+    margin-right: 80px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }

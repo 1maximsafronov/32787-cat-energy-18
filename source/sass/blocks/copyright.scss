@@ -1,23 +1,25 @@
 // copyright
 
 .copyright {
-  color: #444444;
+  color: $text-dark-gray;
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    .copyright__image {
+      fill: $bg-green;
+    }
+  }
 }
 
 .copyright__image {
   margin-left: 23px;
 
-  fill: #666666;
-}
-
-.copyright:hover .copyright__image,
-.copyright:focus .copyright__image {
-  fill: #68b738;
-}
-
-.copyright:active {
-  opacity: 0.3;
+  fill: $dark-gray;
 }

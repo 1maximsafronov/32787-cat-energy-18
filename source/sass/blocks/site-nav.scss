@@ -1,6 +1,6 @@
 // site-nav
 .site-nav {
-  color: #111111;
+  color: $text-black;
   list-style: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -15,25 +15,28 @@
   padding-right: 20px;
   padding-bottom: 22px;
   padding-left: 20px;
-  border-bottom: 1px solid #e6e6e6;
-  color: #111111;
+  border-bottom: 1px solid $border-light-light-gray;
+  color: $text-black;
   text-align: center;
   text-decoration: none;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
-.site-nav__link[href]:hover,
-.site-nav__link[href]:focus {
-  opacity: 0.6;
-}
-
-.site-nav__link[href]:active {
-  opacity: 0.3;
-}
 
 @media ($tablet-width) {
   .site-nav {
     display: flex;
-    color: #222222;
+    color: $text-light-black;
     list-style: none;
     text-transform: uppercase;
     font-weight: 400;
@@ -48,20 +51,20 @@
     padding-bottom: 8px;
     padding-left: 0;
     border-bottom: none;
-    color: #222222;
+    color: $text-light-black;
     text-align: center;
-  }
 
-  .site-nav__link--current {
-    border-bottom: 2px solid #68b738;
+    &--current {
+      border-bottom: 2px solid $bg-green;
+    }
   }
 
   .site-nav__item {
     margin-right: 37px;
-  }
 
-  .site-nav__item:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
