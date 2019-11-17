@@ -1,3 +1,5 @@
+@import "normalize";
+
 html {
   box-sizing: border-box;
   min-width: 320px;
@@ -10,8 +12,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background: #ffffff;
   color: #000000;
   font-family: "Arial", sans-serif;
