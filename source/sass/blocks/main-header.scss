@@ -1,21 +1,15 @@
 // main-header
-.main-header {
-  padding-top: 11px;
-}
+
 
 @media ($tablet-width) {
   .main-header {
     padding-top: 24px;
-    padding-right: 30px;
-    padding-left: 30px;
   }
 }
 
 @media ($desktop-width) {
   .main-header {
     padding-top: 54px;
-    padding-right: 40px;
-    padding-left: 40px;
 
     &--index-page::before {
       content: "";
@@ -28,7 +22,7 @@
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: 0 0;
-      background-color: #65a93c;
+      background-color: #63a73a;
       z-index: -1;
     }
   }

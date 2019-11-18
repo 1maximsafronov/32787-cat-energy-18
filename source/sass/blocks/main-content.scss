@@ -1,0 +1,11 @@
+.main-content__promo {
+  margin-bottom: 22px;
+}
+
+@media ($tablet-width) {
+  margin-bottom: 0;
+}
+
+@media ($desktop-width) {
+  margin-bottom: 0;
+}
