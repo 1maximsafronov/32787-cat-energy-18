@@ -2,107 +2,127 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Фукнциональное питание для котов. Занялся собой? Займись котом!">
     <title>HTML Academy: Кэт энерджи - Подбор программы</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <a class="main-header__logo logotype" href="index.html">
-            <img class="logotype__image" src="img/logo-icon-cat-energy.svg" alt="Логотип Кэт Энерджи">
-            <img class="logotype__image" src="img/logo-text-cat-energy.svg" alt="Логотип Кэт Энерджи">
+            <picture>
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="logotype__image" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
-            <span class="visually-hiden">Меню сайта</span>
+            <span class="visually-hidden">Меню сайта</span>
           </button>
         </div>
         <ul class="main-nav__site-nav site-nav">
-          <li><a class="site-nav__link" href="index.html">Главная</a></li>
-          <li><a class="site-nav__link" href="catalog.html">Каталог продукции</a></li>
-          <li><a class="site-nav__link site-nav__link--current">Подбор программы</a></li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--current">Подбор программы</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="page-title">Подбор программы</h1>
-      <p>Заполните анкету и мы подберем
-программу питания для вашего кота</p>
-      <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
+    <main class="main-content container">
+      <h1 class="main-content__title page-title">Подбор программы</h1>
+      <form class="main-content__request-form request-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="request-form__desc">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         <div class="request-form__wrapper">
-          <div class="request-form__column">
-            <p class="request-form__name custom-text-field">
+          <fieldset class="request-form__section request-form__column">
+            <legend class="visually-hidden">Оновные данные о коте.</legend>
+            <p class="request-form__text-field custom-text-field">
               <label for="cat-name">Имя:*</label>
               <input class="custom-text-field__input" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
+              <span class="custom-text-field__icon"></span>
             </p>
-            <p class="request-form__weight custom-text-field">
+
+            <p class="request-form__text-field custom-text-field">
               <label for="cat-weight">Вес (кг):*</label>
               <input class="custom-text-field__input" type="number" name="cat-weight" placeholder="7" id="cat-weight">
             </p>
-            <p class="request-form__age custom-text-field">
-              <label for="cat-age">Возраст (лет):</label>
+
+            <p class="request-form__text-field custom-text-field">
+              <label for="cat-age">Возраст&nbsp;(лет):</label>
               <input class="custom-text-field__input" type="number" name="cat-age" placeholder="7" id="cat-age">
             </p>
-          </div>
-          <fieldset class="request-form__column">
+
+          </fieldset>
+          <fieldset class="request-form__section request-form__section--border request-form__column">
             <legend class="visually-hidden">Цель питания.</legend>
+
             <p class="request-form__radio">
               <input class="visually-hidden" type="radio" name="purpose" value="weight-loss" id="weight-loss" checked>
               <label class="custom-radio" for="weight-loss">Похудение</label>
             </p>
+
             <p class="request-form__radio">
               <input class="visually-hidden" type="radio" name="purpose" value="weight-gain" id="weight-gain">
               <label class="custom-radio" for="weight-gain">Набор массы</label>
             </p>
+
             <p class="request-form__radio">
               <input class="visually-hidden" type="radio" name="purpose" value="idk" id="idk">
               <label class="custom-radio" for="idk">Не знаю (нужен ваш совет)</label>
             </p>
           </fieldset>
         </div>
-        <fieldset class="request-form__contacts">
+        <fieldset class="request-form__section request-form__section--contacts">
           <legend class="request-form__title">Контактные данные (владельца кота)</legend>
           <!-- ну сделал такую разметку более очевидные колонки.
                 Колонки есть на десктопной версии 2 колонки по 570px в первом разделе с именем и радиобатаннами и 2 колонки в блоке Контактных данных. -->
           <div class="request-form__wrapper">
-            <div class="request-form__column">
-              <p class="request-form__email custom-text-field">
+              <p class="request-form__text-field custom-text-field request-form__column">
                 <label for="cat-email">E-mail:*</label>
                 <input class="custom-text-field__input" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
               </p>
-            </div>
-            <div class="request-form__column">
-              <p class="request-form__phone custom-text-field">
+
+              <p class="request-form__text-field custom-text-field request-form__column">
                 <label for="cat-phone">Телефон:*</label>
                 <input class="custom-text-field__input" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
               </p>
-            </div>
+
           </div>
         </fieldset>
-        <div class="request-form__comment">
+        <div class="request-form__section request-form__section--comment">
           <h2 class="request-form__title">Комментарий</h2>
-          <textarea class="request-form__comment-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <p class="custom-text-field">
+            <label class="visually-hidden">Напишите нам про кота</label>
+            <textarea class="request-form__comment-text custom-text-field__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
         </div>
-        <fieldset>
+        <fieldset class="request-form__section request-form__section--addition">
           <legend class="request-form__title">Дополнительно</legend>
-          <ul class="request-form__wrapper">
-            <li class="request-form__checkbox">
+          <div class="request-form__wrapper">
+            <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="custom-checkbox" for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="request-form__checkbox">
+            </p>
+            <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="drinking-water" id="drinking-water">
               <label class="custom-checkbox" for="drinking-water">Питьевая вода</label>
-            </li>
-            <li class="request-form__checkbox">
+            </p>
+            <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="milk" id="milk">
               <label class="custom-checkbox" for="milk">Молоко</label>
-            </li>
-            <li class="request-form__checkbox">
+            </p>
+            <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
               <label class="custom-checkbox" for="vitamins">Витамины</label>
-            </li>
-          </ul>
+            </p>
+          </div>
         </fieldset>
         <button class="request-form__btn btn" type="submit" name="send-order">Отправить заявку</button>
         <small class="request-form__legend">* — Обязательные поля</small>
@@ -111,7 +131,7 @@
     <footer class="main-footer">
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="contacts__desc">
+        <div class="contacts__desc container">
           <b class="contacts__slogan">Приглашаем к&nbsp;сотрудничество дилеров!</b>
           <address class="contacts__address">
             <p class="contacts__address-text">
@@ -124,30 +144,40 @@
           </address>
         </div>
         <p class="contacts__map">
-          <img class="contacts__map-image" src="img/map.jpg" alt="Мы находимся по адрессу ул. Большая Конюшенная, д 19/8">
         </p>
       </section>
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper container">
         <a class="main-footer__logo footer-logotype" href="index.html">
-          <img class="footer-logotype__image" src="img/logo-text-cat-energy.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
+          <img class="footer-logotype__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
         </a>
         <div class="main-footer__social social">
           <a class="social__link" href="#">
+            <svg class="social__icon social__icon--vk" width="30" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social__icon social__icon--vk" style="enable-background:new 0 0 22 12" viewBox="0 0 22 12">
+              <path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9s.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6.7 1.5 1.5 2.8 2.6 4 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1s.5.5.9.9c1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.8-.1zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/>
+            </svg>
             <span class="visually-hidden">Мы во Вконтакте</span>
           </a>
           <a class="social__link" href="#">
+            <svg class="social__icon social__icon--inst" width="23" height="23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="enable-background:new 0 0 16.1 16" viewBox="0 0 16.1 16">
+              <path d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z" class="st0"/>
+              <path d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z" class="st0"/>
+              <circle cx="12.3" cy="3.7" r=".9" class="st0"/>
+            </svg>
             <span class="visually-hidden">Наш Инстаграм</span>
           </a>
           <a class="social__link" href="#">
+            <svg class="social__icon social__icon--fb" width="14" height="28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="enable-background:new 0 0 10 19" viewBox="0 0 10 19">
+              <path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/>
+            </svg>
             <span class="visually-hidden">Мы в Фейсбуке</span>
           </a>
         </div>
         <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__author">HTML Academy</span>
-          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Разработано HTML Academy">
+          <svg class="copyright__image" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="#2E368F"><path  d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
         </a>
       </div>
     </footer>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,30 @@
+// logotype
+.logotype {
+  display: block;
+  width: 191px;
+  height: 38px;
+
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
+@media ($tablet-width) {
+  .logotype {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media ($desktop-width) {
+  .logotype {
+    width: 202px;
+    height: 59px;
+  }
+}

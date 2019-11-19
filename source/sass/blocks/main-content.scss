@@ -1,0 +1,41 @@
+.main-content__promo {
+  margin-bottom: 22px;
+
+  @include container;
+}
+
+.main-content__purpose {
+  @include container;
+}
+
+.main-content__features {
+  @include container;
+}
+
+.main-content__example {
+  @include container;
+}
+
+.main-content__catalog {
+  @include container;
+}
+
+.main-content__optional-catalog {
+  @include container;
+}
+
+.main-content__title {
+  @include container;
+}
+
+.main-content__request-form {
+  @include container;
+}
+
+@media ($tablet-width) {
+  margin-bottom: 0;
+}
+
+@media ($desktop-width) {
+  margin-bottom: 0;
+}

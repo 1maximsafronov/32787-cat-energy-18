@@ -1,0 +1,97 @@
+// features
+
+
+.features__title {
+  margin-bottom: 35px;
+}
+
+.features__list {
+  padding: 0;
+  color: $text-dark-gray;
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.features__item {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+
+  &::before {
+    display: block;
+    margin-right: 20px;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-green;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--nutrients::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--cooking::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--meal::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--results::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+
+.features__number {
+  display: none;
+}
+
+.features__desc {
+  margin: 0;
+}
+
+@media ($tablet-width) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    display: block;
+    margin-bottom: 139px;
+    width: 325px;
+
+    &::before {
+      margin-right: 0;
+      margin-bottom: 60px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .features__number {
+    position: absolute;
+    top: -26px;
+    left: 124px;
+    z-index: -1;
+    display: block;
+    color: $bg-gray;
+    font-weight: 400;
+    font-size: 281px;
+    font-family: "Oswald", "Arial", sans-serif;
+    line-height: 281px;
+  }
+}
+
+@media ($desktop-width) {
+  .features__item {
+    width: 245px;
+  }
+}

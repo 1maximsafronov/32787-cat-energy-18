@@ -1,0 +1,33 @@
+// main-header
+
+
+@media ($tablet-width) {
+  .main-header {
+    padding-top: 24px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media ($desktop-width) {
+  .main-header {
+    padding-top: 54px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    &--index-page::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-color: #63a73a;
+      z-index: -1;
+    }
+  }
+}

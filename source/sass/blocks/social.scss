@@ -1,0 +1,70 @@
+// social
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__link {
+  display: block;
+  margin-right: 38px;
+  text-decoration: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__icon {
+  fill: $dark-gray;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--inst {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $bg-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    fill: $bg-green;
+  }
+}
+
+
+@media ($tablet-width) {
+  .social__link {
+    margin-right: 28px;
+  }
+
+  .social__icon {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

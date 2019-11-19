@@ -1,0 +1,48 @@
+// btn
+.btn {
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: $bg-green;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-gree-dark;
+  }
+
+  &:active {
+    background-color: $bg-gree-dark;
+    color: rgba($white, 0.3);
+  }
+
+  &--gray {
+    background-color: $bg-gray;
+    color: $text-dark-gray;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-light-gray;
+    }
+
+    &:active {
+      background-color: $bg-light-gray;
+      color: rgba($text-dark-gray, 0.3);
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .btn {
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
