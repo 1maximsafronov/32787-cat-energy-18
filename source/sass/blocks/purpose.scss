@@ -1,7 +1,8 @@
 // purpose
-
-.purpose {
-  background-color: $white;
+.purpose__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
 }
 
 .purpose__list {
@@ -73,6 +74,11 @@
 
 
 @media ($tablet-width) {
+  .purpose__wrapper {
+    padding: 0 30px;
+    width: 768px;
+  }
+
   .purpose__item {
     margin-bottom: 30px;
     padding-top: 80px;
@@ -82,8 +88,8 @@
   }
 
   .purpose__title {
-    font-size: 36px;
     padding-left: 0;
+    font-size: 36px;
   }
 
   .purpose__text {
@@ -106,6 +112,11 @@
 
 
 @media ($desktop-width) {
+  .purpose__wrapper {
+    padding: 0 40px;
+    width: 1300px;
+  }
+
   .purpose__list {
     display: flex;
     justify-content: space-between;

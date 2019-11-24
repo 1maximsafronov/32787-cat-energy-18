@@ -3,6 +3,12 @@
   background-color: #f2f2f2;
 }
 
+.example__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 40px;
+  width: 320px;
+}
 
 .example__desc {
   font-size: 14px;
@@ -53,7 +59,36 @@
 
 @media ($tablet-width) {
   .example {
-    background-color: #ffffff;
+    position: relative;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      display: block;
+      height: 462px;
+      content: "";
+    }
+
+    &::before {
+      right: 50%;
+      left: 0;
+      background-color: #f2f2f2;
+    }
+
+    &::after {
+      right: 0;
+      left: 50%;
+      background-color: #eaeaea;
+    }
+  }
+
+  .example__wrapper {
+    padding: 0 30px;
+    padding-bottom: 67px;
+    width: 768px;
   }
 
   .example__desc {
@@ -99,17 +134,23 @@
 
 @media ($desktop-width) {
   .example {
+    &::before {
+      right: 50%;
+    }
+
+    &::after {
+      left: 50%;
+    }
+  }
+
+  .example__wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: #f2f2f2;
-    box-shadow: inset 0 150px 0 0 #ffffff;
+    padding: 0 40px;
+    width: 1300px;
   }
 
   .example__stat-caption {
     background-color: #f2f2f2;
-  }
-
-  .example__wrapper {
-    width: 570px;
   }
 }
