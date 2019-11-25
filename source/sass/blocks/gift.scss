@@ -2,9 +2,7 @@
 .gift {
   position: relative;
   margin: 0;
-  padding: 0 60px;
-  padding-top: 190px;
-  padding-bottom: 20px;
+  padding: 190px 60px 20px;
   min-height: 289px;
   width: 280px;
   background-color: $bg-gree-dark;
@@ -17,16 +15,16 @@
   line-height: 20px;
 
   &::before {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 60px;
     position: absolute;
     top: 65px;
     left: 113px;
+    display: block;
+    width: 55px;
+    height: 60px;
     background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
     background-position: 0 0;
+    background-repeat: no-repeat;
+    content: "";
   }
 }
 
