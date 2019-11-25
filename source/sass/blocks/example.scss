@@ -134,6 +134,8 @@
 
 @media ($desktop-width) {
   .example {
+    padding-bottom: 39px;
+
     &::before {
       right: 50%;
     }

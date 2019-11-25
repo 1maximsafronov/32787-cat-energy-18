@@ -1,1 +1,68 @@
 // controls
+.controls {
+  display: flex;
+}
+
+.controls__range {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  height: 14px;
+  width: 84px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  padding: 3px 5px;
+}
+
+.controls__bar {
+  background-color: #68b738;
+  width: 50%;
+  height: 6px;
+  border-radius: 5px;
+}
+
+.controls__toggle {
+  display: none;
+  left: -100%;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #cdcdcd;
+  background-color: #68b738;
+  box-shadow: inset
+    0 0 0 12px #ffffff,
+    0 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: inset
+      0 0 0 12px #ffffff,
+      0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    border: 2px solid #68b738;
+    box-shadow: inset
+      0 0 0 11px #ffffff,
+      0 4px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media ($tablet-width) {
+  .controls__toggle {
+    display: block;
+    top: -14px;
+    left: 50%;
+  }
+
+  .controls__range {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .controls__bar {
+    display: none;
+  }
+}
