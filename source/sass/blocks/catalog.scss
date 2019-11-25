@@ -9,14 +9,14 @@
 
 .catalog__list {
   padding: 0;
-  border-top: 1px solid #ededed;
+  border-top: 1px solid $border-gray-light;
   list-style: none;
 }
 
 .catalog__item {
   padding: 0 20px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $border-gray-light;
 }
 
 

@@ -1,6 +1,6 @@
 // example
 .example {
-  background-color: #f2f2f2;
+  background-color: $bg-gray;
 }
 
 .example__wrapper {
@@ -25,9 +25,9 @@
   margin: 0;
   padding: 15px;
   width: 124px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $border-gray;
   border-radius: 3px;
-  color: #111111;
+  color: $text-black;
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
@@ -41,8 +41,8 @@
   left: 50%;
   padding-right: 16px;
   padding-left: 16px;
-  background-color: #f2f2f2;
-  color: #444444;
+  background-color: $bg-gray;
+  color: $text-dark-gray;
   text-transform: none;
   font-size: 12px;
   line-height: 12px;
@@ -75,13 +75,13 @@
     &::before {
       right: 50%;
       left: 0;
-      background-color: #f2f2f2;
+      background-color: $bg-gray;
     }
 
     &::after {
       right: 0;
       left: 50%;
-      background-color: #eaeaea;
+      background-color: $bg-gray-onemore;
     }
   }
 
@@ -115,7 +115,7 @@
   .example__stat-caption {
     padding-right: 8px;
     padding-left: 8px;
-    background-color: #ffffff;
+    background-color: $white;
     font-size: 14px;
     line-height: 14px;
   }
@@ -153,6 +153,6 @@
   }
 
   .example__stat-caption {
-    background-color: #f2f2f2;
+    background-color: $bg-gray;
   }
 }

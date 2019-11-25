@@ -77,10 +77,10 @@
 
     &--white-text {
       .site-nav__link {
-        color: #ffffff;
+        color: $white;
 
         &--current {
-          border-bottom: 2px solid #ffffff;
+          border-bottom: 2px solid $white;
         }
       }
     }
