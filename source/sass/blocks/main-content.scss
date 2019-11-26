@@ -1,41 +1,34 @@
 .main-content__promo {
   margin-bottom: 22px;
-
-  @include container;
-}
-
-.main-content__purpose {
-  @include container;
-}
-
-.main-content__features {
-  @include container;
-}
-
-.main-content__example {
-  @include container;
-}
-
-.main-content__catalog {
-  @include container;
 }
 
 .main-content__optional-catalog {
-  @include container;
+  margin-bottom: 35px;
 }
 
 .main-content__title {
-  @include container;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
 }
 
-.main-content__request-form {
-  @include container;
-}
 
 @media ($tablet-width) {
-  margin-bottom: 0;
+  .main-content__optional-catalog {
+    margin-bottom: 85px;
+  }
+
+  .main-content__title {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 768px;
+  }
 }
 
 @media ($desktop-width) {
-  margin-bottom: 0;
+  .main-content__title {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 1300px;
+  }
 }

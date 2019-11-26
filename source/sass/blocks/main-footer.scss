@@ -6,8 +6,12 @@
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
   padding-top: 39px;
+  padding-bottom: 22px;
   padding-left: 20px;
+  width: 320px;
   background-color: $bg-gray;
 
   @include container;
@@ -41,8 +45,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 30px;
+    width: 768px;
   }
 
   .main-footer__logo {
@@ -61,5 +65,12 @@
     margin: 0;
     padding: 0;
     border: none;
+  }
+}
+
+@media ($desktop-width) {
+  .main-footer__wrapper {
+    padding: 60px 40px;
+    width: 1300px;
   }
 }

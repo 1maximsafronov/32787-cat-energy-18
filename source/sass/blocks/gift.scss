@@ -1,0 +1,60 @@
+//
+.gift {
+  position: relative;
+  margin: 0;
+  padding: 190px 60px 20px;
+  min-height: 289px;
+  width: 280px;
+  background-color: $bg-gree-dark;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: $white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+
+  &::before {
+    position: absolute;
+    top: 65px;
+    left: 113px;
+    display: block;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+@media ($tablet-width) {
+  .gift {
+    padding-top: 75px;
+    padding-left: 424px;
+    min-height: 200px;
+    width: 708px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    text-align: left;
+
+    &::before {
+      left: 91px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .gift {
+    margin: 0;
+    padding: 0 43px;
+    padding-top: 190px;
+    width: 245px;
+    height: auto;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    text-align: center;
+
+    &::before {
+      left: 96px;
+    }
+  }
+}

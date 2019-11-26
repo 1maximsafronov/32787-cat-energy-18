@@ -12,13 +12,13 @@
 .site-nav__link {
   display: block;
   padding-top: 23px;
+  padding-right: 20px;
   padding-bottom: 22px;
+  padding-left: 20px;
   border-bottom: 1px solid $border-light-light-gray;
   color: $text-black;
   text-align: center;
   text-decoration: none;
-  padding-right: 20px;
-  padding-left: 20px;
 
   &[href] {
     &:hover,
@@ -36,8 +36,8 @@
 @media ($tablet-width) {
   .site-nav {
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
+    justify-content: flex-end;
     color: $text-light-black;
     list-style: none;
     text-transform: uppercase;
@@ -77,10 +77,10 @@
 
     &--white-text {
       .site-nav__link {
-        color: #ffffff;
+        color: $white;
 
         &--current {
-          border-bottom: 2px solid #ffffff;
+          border-bottom: 2px solid $white;
         }
       }
     }
