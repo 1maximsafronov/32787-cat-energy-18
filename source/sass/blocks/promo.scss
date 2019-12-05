@@ -24,6 +24,11 @@
     background-position: 50% 0;
     background-repeat: no-repeat;
     content: "";
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 

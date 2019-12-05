@@ -1,5 +1,6 @@
 // logotype
-.logotype {
+.logotype,
+.logotype__image {
   display: block;
   width: 191px;
   height: 38px;
@@ -16,14 +17,16 @@
 }
 
 @media ($tablet-width) {
-  .logotype {
+  .logotype,
+  .logotype__image {
     width: 173px;
     height: 58px;
   }
 }
 
 @media ($desktop-width) {
-  .logotype {
+  .logotype,
+  .logotype__image {
     width: 202px;
     height: 59px;
   }
