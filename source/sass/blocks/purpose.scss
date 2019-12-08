@@ -2,7 +2,7 @@
 .purpose__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  width: 320px;
+  min-width: 320px;
 }
 
 .purpose__list {
@@ -120,7 +120,7 @@
 @media ($tablet-width) {
   .purpose__wrapper {
     padding: 0 30px;
-    width: 768px;
+    min-width: 768px;
   }
 
   .purpose__item {
@@ -149,6 +149,8 @@
     }
 
     &--weight-gain {
+      padding-right: 316px;
+
       &::after {
         width: 268px;
         height: 112px;
