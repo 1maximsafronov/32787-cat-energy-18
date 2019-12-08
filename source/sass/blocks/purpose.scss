@@ -15,6 +15,50 @@
   margin-bottom: 20px;
   padding: 20px;
   background-color: $bg-gray;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    border-radius: 50%;
+    background-color: $bg-green;
+  }
+
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &--weight-loss {
+    &::after {
+      width: 35px;
+      height: 49px;
+      top: 22px;
+      left: 30px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &--weight-gain {
+    &::after {
+      width: 67px;
+      height: 28px;
+      top: 35px;
+      left: 13px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
 }
 
 .purpose__title {
@@ -85,6 +129,34 @@
     padding-right: 285px;
     padding-bottom: 60px;
     padding-left: 52px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: auto;
+      right: 61px;
+    }
+
+    &--weight-loss {
+      &::after {
+        width: 140px;
+        height: 194px;
+        left: auto;
+        top: 80px;
+        right: 92px;
+      }
+    }
+
+    &--weight-gain {
+      &::after {
+        width: 268px;
+        height: 112px;
+        top: 135px;
+        left: auto;
+        right: 28px;
+      }
+    }
   }
 
   .purpose__title {
@@ -126,6 +198,34 @@
     margin-bottom: 0;
     padding-right: 52px;
     width: 570px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+    }
+
+    &--weight-loss {
+      &::after {
+        width: 70px;
+        height: 97px;
+        left: 66px;
+        top: 41px;
+        right: 92px;
+      }
+    }
+
+    &--weight-gain {
+      &::after {
+        width: 134px;
+        height: 56px;
+        top: 69px;
+        left: 34px;
+        right: auto;
+      }
+    }
   }
 
   .purpose__title {
