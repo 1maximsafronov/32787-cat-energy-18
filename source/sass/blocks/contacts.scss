@@ -2,7 +2,7 @@
 .contacts__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  width: 320px;
+  min-width: 320px;
 }
 
 .contacts__desc {
@@ -14,7 +14,7 @@
 }
 
 .contacts__slogan {
-  width: 140px;
+  width: 44%;
   color: $text-black;
   text-transform: uppercase;
   font-weight: 400;
@@ -69,6 +69,7 @@
   .contacts__address {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 
   .contacts__address-text {
@@ -107,6 +108,10 @@
     padding: 60px 75px;
     width: 570px;
     background-color: $white;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 
   .contacts__map {

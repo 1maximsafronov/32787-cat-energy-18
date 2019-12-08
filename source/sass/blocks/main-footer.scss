@@ -11,7 +11,7 @@
   padding-top: 39px;
   padding-bottom: 22px;
   padding-left: 20px;
-  width: 320px;
+  min-width: 320px;
   background-color: $bg-gray;
 
   @include container;
@@ -46,7 +46,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 60px 30px;
-    width: 768px;
+    min-width: 768px;
   }
 
   .main-footer__logo {

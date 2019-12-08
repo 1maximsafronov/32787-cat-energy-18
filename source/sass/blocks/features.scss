@@ -2,7 +2,7 @@
 .features__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  width: 320px;
+  min-width: 320px;
 }
 
 .features__title {
@@ -83,7 +83,7 @@
 @media ($tablet-width) {
   .features__wrapper {
     padding: 0 30px;
-    width: 768px;
+    min-width: 768px;
   }
 
   .features__list {
