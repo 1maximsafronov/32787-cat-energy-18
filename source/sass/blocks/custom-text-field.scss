@@ -1,6 +1,7 @@
 .custom-text-field {
   display: flex;
   align-items: baseline;
+  position: relative;
 }
 
 .custom-text-field__input {
@@ -21,6 +22,36 @@
   &:focus {
     padding: 12px 14px;
     border: 2px solid $text-dark-gray;
+
+    & + .custom-text-field__icon {
+      fill: $bg-green;
+    }
+  }
+}
+
+.custom-text-field__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--mail {
+    right: 16px;
+
+    @media ($tablet-width) {
+      right: 20px;
+    }
+  }
+
+  &--phone {
+    right: 13px;
+
+    @media ($tablet-width) {
+      right: 17px;
+    }
+
+    @media ($desktop-width) {
+      right: 20px;
+    }
   }
 }
 
