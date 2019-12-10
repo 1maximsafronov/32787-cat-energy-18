@@ -1,5 +1,6 @@
 // site-nav
 .site-nav {
+  padding: 0;
   color: $text-black;
   list-style: none;
   text-transform: uppercase;
@@ -44,24 +45,23 @@
     font-weight: 400;
     font-size: 18px;
     font-family: "Oswald", "Arial", sans-serif;
-    line-height: 24.86px;
+    line-height: 25px;
   }
 
   .site-nav__link {
     padding: 0;
-    padding-top: 11px;
-    padding-bottom: 8px;
     border-bottom: none;
     color: $text-light-black;
     text-align: center;
-
-    &--current {
-      border-bottom: 2px solid $bg-green;
-    }
   }
 
   .site-nav__item {
     margin-right: 35.4px;
+    padding-bottom: 7px;
+
+    &--current {
+      border-bottom: 2px solid $bg-green;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -76,18 +76,18 @@
 
 
     &--white-text {
+      color: $white;
+
       .site-nav__link {
         color: $white;
+      }
 
+      .site-nav__item {
         &--current {
-          border-bottom: 2px solid $white;
+          border-bottom-color: $white;
         }
       }
     }
-  }
-
-  .site-nav__link {
-    padding-top: 14px;
   }
 
   .site-nav__item {

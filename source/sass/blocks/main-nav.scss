@@ -16,9 +16,8 @@
 }
 
 .main-nav__site-nav {
-  margin: 0;
-  padding: 0;
   display: none;
+  margin: 0;
 
   &--no-js {
     display: block;
@@ -31,28 +30,22 @@
 
 
 .main-nav__toggle {
+  margin-top: 3px;
+  padding: 0;
   width: 24px;
-  height: 24px;
+  height: 18px;
   border: none;
   background-color: transparent;
   background-image: url("../img/icon-mobile-menu.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  margin-top: 9px;
 
-  &--no-js {
-    background-image: url("../img/icon-close.svg");
-  }
-
+  &--no-js,
   &--open {
-    margin-top: 3px;
     margin-right: 3px;
     width: 18px;
     height: 18px;
-
     background-image: url("../img/icon-close.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 }
 
@@ -60,7 +53,7 @@
 @media ($tablet-width) {
   .main-nav {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     padding-right: 30px;
     padding-left: 30px;
@@ -73,6 +66,7 @@
 
   .main-nav__site-nav {
     display: flex;
+    margin-bottom: 6px;
   }
 
   .main-nav__wrapper {
@@ -83,13 +77,13 @@
 
 @media ($desktop-width) {
   .main-nav {
-    display: flex;
     padding-right: 40px;
     padding-left: 40px;
     width: 1300px;
   }
 
   .main-nav__site-nav {
+    margin-bottom: 5px;
     max-width: 570px;
   }
 }

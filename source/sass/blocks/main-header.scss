@@ -9,14 +9,13 @@
 
 @media ($desktop-width) {
   .main-header {
-    padding-top: 54px;
+    padding-top: 53.5px;
 
 
     &--index-page::before {
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(-1px);
       z-index: -1;
       display: block;
       width: 50%;
@@ -26,6 +25,7 @@
       background-position: 0 0;
       background-repeat: no-repeat;
       content: "";
+      transform: translateX(-1px);
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
