@@ -2,6 +2,10 @@
   margin-bottom: 22px;
 }
 
+.main-content__purpose {
+  margin-bottom: 17px;
+}
+
 .main-content__catalog {
   padding-top: 15px;
   margin-bottom: 28px;
@@ -24,6 +28,10 @@
     margin-bottom: 67px;
   }
 
+  .main-content__purpose {
+    margin-bottom: 45px;
+  }
+
   .main-content__optional-catalog {
     margin-bottom: 75px;
   }
@@ -36,6 +44,10 @@
 }
 
 @media ($desktop-width) {
+  .main-content__purpose {
+    margin-bottom: 73px;
+  }
+
   .main-content__catalog {
     padding-top: 75px;
     margin-bottom: 9px;

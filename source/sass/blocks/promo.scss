@@ -64,13 +64,6 @@
 
 
 @media ($tablet-width) {
-  .promo__wrapper {
-    padding: 0 90px;
-    padding-top: 58px;
-    padding-bottom: 507px;
-    width: 768px;
-  }
-
   .promo {
     position: relative;
     background-image: none;
@@ -81,9 +74,16 @@
     }
   }
 
+  .promo__wrapper {
+    padding-right: 120px;
+    padding-left: 119px;
+    padding-top: 58px;
+    padding-bottom: 507px;
+    width: 768px;
+  }
+
   .promo__title {
     margin-bottom: 41px;
-    width: 450px;
     color: $text-black;
     line-height: 60px;
   }
@@ -116,7 +116,8 @@
 
 @media ($desktop-width) {
   .promo__wrapper {
-    padding: 0 80px;
+    padding-right: 120px;
+    padding-left: 120px;
     padding-top: 109px;
     padding-bottom: 246px;
     width: 1300px;
@@ -124,6 +125,10 @@
 
   .promo {
     margin-bottom: 80px;
+  }
+
+  .promo__title {
+    width: 510px;
   }
 
   .promo__text {

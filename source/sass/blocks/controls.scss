@@ -1,6 +1,17 @@
 // controls
 .controls {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: $text-black;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 20px;
+}
+
+.controls__label {
+  width: 45px;
 }
 
 .controls__range {
@@ -49,6 +60,11 @@
 }
 
 @media ($tablet-width) {
+  .controls {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .controls__toggle {
     top: -14px;
     left: 50%;
