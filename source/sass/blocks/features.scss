@@ -93,7 +93,7 @@
   padding-top: 2px;
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .features {
     padding-bottom: 52px;
     border-bottom: 1px solid $border-light-light-gray;
@@ -117,9 +117,9 @@
   .features__item {
     display: block;
     margin-bottom: 83px;
-    width: 324px;
     padding-right: 75px;
     padding-bottom: 50px;
+    width: 324px;
 
     &:nth-child(2n+1) {
       margin-bottom: 0;
@@ -138,27 +138,27 @@
   }
 
   .features__desc {
-    font-size: 16px;
-    line-height: 24px;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .features__number {
     position: absolute;
-    left: 115px;
     top: -40px;
+    left: 115px;
     z-index: -1;
     display: block;
     color: $bg-gray;
     font-weight: 400;
     font-size: 281px;
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $primary-font;
     line-height: 281px;
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .features {
     padding: 0;
     border-bottom: none;
@@ -170,10 +170,10 @@
   }
 
   .features__item {
-    width: 245px;
+    margin: 0;
     padding: 0;
     padding-bottom: 50px;
-    margin: 0;
+    width: 245px;
 
 
     &--cooking::before {

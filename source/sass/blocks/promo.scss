@@ -9,7 +9,7 @@
 .promo {
   position: relative;
   text-align: center;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
 
   &::before {
     position: absolute;
@@ -63,7 +63,7 @@
 }
 
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .promo {
     position: relative;
     background-image: none;
@@ -75,10 +75,10 @@
   }
 
   .promo__wrapper {
-    padding-right: 120px;
-    padding-left: 119px;
     padding-top: 58px;
+    padding-right: 120px;
     padding-bottom: 507px;
+    padding-left: 119px;
     width: 768px;
   }
 
@@ -114,12 +114,12 @@
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .promo__wrapper {
-    padding-right: 120px;
-    padding-left: 120px;
     padding-top: 109px;
+    padding-right: 120px;
     padding-bottom: 246px;
+    padding-left: 120px;
     width: 1300px;
   }
 

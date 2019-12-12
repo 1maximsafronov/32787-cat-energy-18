@@ -6,7 +6,7 @@
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
   line-height: 20px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .site-nav {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@
     text-transform: uppercase;
     font-weight: 400;
     font-size: 18px;
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $primary-font;
     line-height: 25px;
   }
 
@@ -69,10 +69,10 @@
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .site-nav {
     font-size: 20px;
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $primary-font;
 
 
     &--white-text {

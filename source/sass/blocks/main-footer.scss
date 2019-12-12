@@ -18,6 +18,10 @@
 
 .main-footer__contacts {
   background-color: $white;
+
+  &--bg-gray {
+    background-color: $bg-gray;
+  }
 }
 
 .main-footer__logo {
@@ -28,8 +32,8 @@
 }
 
 .main-footer__social {
-  padding-right: 9px;
   padding-top: 22px;
+  padding-right: 9px;
   padding-bottom: 17px;
   border-bottom: 1px solid $border-light-gray;
 }
@@ -38,7 +42,7 @@
   padding-top: 22px;
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .main-footer__wrapper {
     align-items: center;
     flex-direction: row;
@@ -69,7 +73,7 @@
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .main-footer__wrapper {
     padding: 60px 40px;
     padding-top: 59px;

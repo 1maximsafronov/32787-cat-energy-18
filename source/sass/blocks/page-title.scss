@@ -1,15 +1,16 @@
 // page-title
 .page-title {
-  color: $text-black;
-  font-weight: 400;
-  font-size: 36px;
-  font-family: "Oswald", "Arial", sans-serif;
-  line-height: 60px;
   margin: 0;
   padding: 0;
+  color: $text-black;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 36px;
+  font-family: $primary-font;
+  line-height: 60px;
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .page-title {
     font-size: 60px;
   }

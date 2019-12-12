@@ -50,7 +50,7 @@
 }
 
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
     align-items: flex-end;
@@ -75,7 +75,7 @@
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .main-nav {
     padding-right: 40px;
     padding-left: 40px;

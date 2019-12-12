@@ -1,13 +1,13 @@
 .section-title {
+  margin: 0;
   color: $text-black;
   font-weight: 400;
   font-size: 36px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
   line-height: 60px;
-  margin: 0;
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .section-title {
     font-size: 60px;
   }

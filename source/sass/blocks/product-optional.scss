@@ -14,14 +14,14 @@
 
 .product-optional__title {
   margin: 0;
-  padding-left: 1px;
   margin-bottom: 13px;
+  padding-left: 1px;
   width: 100%;
   color: $text-light-black;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
   line-height: 16px;
 }
 
@@ -48,12 +48,12 @@
   line-height: 20px;
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .product-optional {
     padding-top: 25px;
+    padding-right: 36px;
     padding-bottom: 27px;
     padding-left: 37px;
-    padding-right: 36px;
     border: 1px solid rgba($border-gray, 0.5);
 
     &:first-child {
@@ -89,7 +89,7 @@
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .product-optional {
     align-items: baseline;
     padding: 0;

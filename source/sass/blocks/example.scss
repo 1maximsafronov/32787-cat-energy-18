@@ -49,16 +49,15 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
   line-height: 24px;
 }
 
 .example__stat-caption {
   position: absolute;
   bottom: -16px;
-  display: inline-block;
   left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
   padding-right: 16px;
   padding-left: 16px;
   background-color: $bg-gray;
@@ -66,8 +65,9 @@
   text-align: center;
   text-transform: none;
   font-size: 12px;
-  font-family: "Arial", sans-serif;
+  font-family: $secondary-font;
   line-height: 12px;
+  transform: translateX(-50%);
 }
 
 .example_cost {
@@ -76,7 +76,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
   line-height: 20px;
 }
 
@@ -94,7 +94,7 @@
   padding-left: 56px;
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .example {
     position: relative;
     background-color: transparent;
@@ -129,9 +129,9 @@
   }
 
   .example__desc {
-    padding: 0 30px;
     margin: 0;
     margin-bottom: 88px;
+    padding: 0 30px;
   }
 
   .example__title {
@@ -163,18 +163,18 @@
   }
 
   .example__stat-caption {
-    left: 0;
     right: 0;
-    margin-left: 8px;
-    margin-right: 8px;
-    transform: translateX(0%);
     bottom: -7px;
+    left: 0;
+    margin-right: 8px;
+    margin-left: 8px;
     padding: 0;
     padding-right: 8px;
     padding-left: 8px;
     background-color: $white;
     font-size: 14px;
     line-height: 14px;
+    transform: translateX(0%);
   }
 
   .example_cost {
@@ -188,14 +188,14 @@
   }
 
   .example__before-after {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   .example__image {
-    width: 677px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    width: 677px;
   }
 
   .example__picture {
@@ -205,7 +205,7 @@
 }
 
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .example {
     padding-bottom: 39px;
 

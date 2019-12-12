@@ -74,7 +74,7 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
   line-height: 37.02px;
 }
 
@@ -95,7 +95,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
   line-height: 16px;
 
   &:active {
@@ -122,7 +122,7 @@
 }
 
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .purpose__wrapper {
     padding: 0 30px;
     min-width: 768px;
@@ -167,10 +167,10 @@
   }
 
   .purpose__title {
-    padding-left: 0;
-    font-size: 36px;
     margin: 0;
     margin-bottom: 25px;
+    padding-left: 0;
+    font-size: 36px;
   }
 
   .purpose__text {
@@ -192,7 +192,7 @@
 }
 
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .purpose__wrapper {
     padding: 0 40px;
     width: 1300px;

@@ -23,8 +23,8 @@
         <path d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z" class="st0"/>
         <circle cx="12.3" cy="3.7" r=".9" class="st0"/>
       </symbol>
-      <symbol id="logo-htmlacademy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-        <path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/>
+      <symbol id="logo-htmlacademy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.94 34.09">
+        <path d="M13.62.02L13.47 0 0 1.41v24.66l13.47 8.02L26.9 26.1l.05-.03V1.42L13.62.01zm11.4 12.1L13.49 5.34v-.1l-.08.05-.1-.06v.11L1.94 12.12V3.15l11.54-1.21 11.55 1.2v8.99zM13.4 6.8l11.52 6.71-4.48 2.64-7.09-4.22-.01 1.41 5.9 3.52-.86.5-5.03-2.99-.01 1.42 3.82 2.27-.78.52-3.03-1.78-.01 1.41 1.85 1.1-1.8 1.07-11.36-6.75L13.41 6.8zM1.92 15.13l11.42 6.79.01 1.04-7.94-4.73-.02 1.42 7.98 4.8.02 1.07-7.97-4.74-.01 1.41 8.02 4.83.04.02 8.15-4.87-.02-5.18 3.42-2.03v10.02l-11.55 6.87-11.54-6.87v-9.85z"/>
       </symbol>
       <symbol id="icon-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13">
         <path d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/>
@@ -63,81 +63,81 @@
       </nav>
     </header>
     <main class="main-content">
-      <h1 class="main-content__title page-title">Подбор программы</h1>
       <form class="main-content__request-form request-form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="request-form__title page-title">Подбор программы</h1>
         <p class="request-form__desc">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         <div class="request-form__wrapper">
-          <fieldset class="request-form__section request-form__column">
-            <legend class="visually-hidden">Оновные данные о коте.</legend>
+          <!-- 1 -->
+          <div class="request-form__section request-form__section--column request-form__section--main-info ">
             <p class="request-form__text-field custom-text-field">
-              <label for="cat-name">Имя:*</label>
-              <input class="custom-text-field__input" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
+              <label class="request-form__text-label" for="cat-name">Имя:*</label>
+              <input class="custom-text-field__input" type="text" name="cat-name" placeholder="Барсик" id="cat-name" required>
               <span class="custom-text-field__icon"></span>
             </p>
-
             <p class="request-form__text-field custom-text-field">
-              <label for="cat-weight">Вес (кг):*</label>
-              <input class="custom-text-field__input" type="number" name="cat-weight" placeholder="7" id="cat-weight">
+              <label class="request-form__text-label" for="cat-weight">Вес (кг):*</label>
+              <input class="custom-text-field__input" type="number" name="cat-weight" placeholder="7" id="cat-weight" required>
             </p>
-
             <p class="request-form__text-field custom-text-field">
-              <label for="cat-age">Возраст&nbsp;(лет):</label>
+              <label class="request-form__text-label" for="cat-age">Возраст&nbsp;(лет):</label>
               <input class="custom-text-field__input" type="number" name="cat-age" placeholder="7" id="cat-age">
             </p>
-
-          </fieldset>
-          <fieldset class="request-form__section request-form__section--border request-form__column">
-            <legend class="visually-hidden">Цель питания.</legend>
-
+          </div><!-- /request-form__section -->
+          <!-- 2 -->
+          <div class="request-form__section request-form__section--column request-form__section--goal request-form__section--border">
             <p class="request-form__radio">
               <input class="visually-hidden" type="radio" name="purpose" value="weight-loss" id="weight-loss" checked>
               <label class="custom-radio" for="weight-loss">Похудение</label>
             </p>
-
             <p class="request-form__radio">
               <input class="visually-hidden" type="radio" name="purpose" value="weight-gain" id="weight-gain">
               <label class="custom-radio" for="weight-gain">Набор массы</label>
             </p>
-
             <p class="request-form__radio">
               <input class="visually-hidden" type="radio" name="purpose" value="idk" id="idk">
               <label class="custom-radio" for="idk">Не знаю (нужен ваш совет)</label>
             </p>
-          </fieldset>
-        </div>
-        <fieldset class="request-form__section request-form__section--contacts">
-          <legend class="request-form__title">Контактные данные (владельца кота)</legend>
-          <!-- ну сделал такую разметку более очевидные колонки.
-                Колонки есть на десктопной версии 2 колонки по 570px в первом разделе с именем и радиобатаннами и 2 колонки в блоке Контактных данных. -->
-          <div class="request-form__wrapper">
-              <p class="request-form__text-field custom-text-field custom-text-field--email request-form__column">
-                <label for="cat-email">E-mail:*</label>
-                <input class="custom-text-field__input" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
-                <svg class="custom-text-field__icon custom-text-field__icon--mail" width="17" height="13">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </p>
+          </div><!-- /request-form__section -->
+        </div><!-- /request-form__wrapper -->
+<!-- 3 -->
+        <h2 class="request-form__section-title">
+          <span>Контактные данные (владельца кота)</span>
+        </h2>
+        <div class="request-form__wrapper request-form__wrapper--contacts">
+          <div class="request-form__section request-form__section--contacts">
+            <p class="request-form__text-field custom-text-field custom-text-field--email">
+              <label class="request-form__text-label" for="cat-email">E-mail:*</label>
+              <input class="custom-text-field__input" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email" required>
+              <svg class="custom-text-field__icon custom-text-field__icon--mail" width="17" height="13">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </p>
+            <p class="request-form__text-field custom-text-field custom-text-field--phone">
+              <label class="request-form__text-label" for="cat-phone">Телефон:*</label>
+              <input class="custom-text-field__input" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone" required>
+              <svg class="custom-text-field__icon custom-text-field__icon--phone" width="20" height="20">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </p>
+          </div><!-- /request-form__section -->
+        </div><!-- /request-form__wrapper -->
 
-              <p class="request-form__text-field custom-text-field custom-text-field--phone request-form__column">
-                <label for="cat-phone">Телефон:*</label>
-                <input class="custom-text-field__input" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
-                <svg class="custom-text-field__icon custom-text-field__icon--phone" width="20" height="20">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </p>
+<!-- 4 -->
+        <h2 class="request-form__section-title"><span>Комментарий</span></h2>
+        <div class="request-form__wrapper">
+          <div class="request-form__section request-form__section--comment">
+            <p class="request-form__text-field custom-text-field">
+              <label class="visually-hidden">Напишите нам про кота</label>
+              <textarea class="request-form__comment-field custom-text-field__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </p>
+          </div><!-- /request-form__section -->
+        </div><!-- /request-form__wrapper -->
 
-          </div>
-        </fieldset>
-        <div class="request-form__section request-form__section--comment">
-          <h2 class="request-form__title">Комментарий</h2>
-          <p class="custom-text-field">
-            <label class="visually-hidden">Напишите нам про кота</label>
-            <textarea class="request-form__comment-text custom-text-field__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </p>
-        </div>
-        <fieldset class="request-form__section request-form__section--addition">
-          <legend class="request-form__title">Дополнительно</legend>
-          <div class="request-form__wrapper">
+
+<!-- 5 -->
+        <h2 class="request-form__section-title request-form__section-title--option"><span>Дополнительно</span></h2>
+        <div class="request-form__wrapper">
+          <div class="request-form__section request-form__section--option">
             <p class="request-form__checkbox">
               <input class="visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="custom-checkbox" for="sweetener">Сахарозаменитель</label>
@@ -154,14 +154,14 @@
               <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
               <label class="custom-checkbox" for="vitamins">Витамины</label>
             </p>
-          </div>
-        </fieldset>
-        <button class="request-form__btn btn" type="submit" name="send-order">Отправить заявку</button>
-        <small class="request-form__legend">* — Обязательные поля</small>
+          </div><!-- /request-form__section -->
+          <button class="request-form__btn btn" type="submit" name="send-order">Отправить заявку</button>
+          <small class="request-form__legend">* — Обязательные поля</small>
+        </div><!-- /request-form__wrapper -->
       </form>
     </main>
     <footer class="main-footer">
-      <section class="main-footer__contacts contacts">
+      <section class="main-footer__contacts main-footer__contacts--bg-gray contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="contacts__wrapper">
           <div class="contacts__desc ">
@@ -169,7 +169,7 @@
             <address class="contacts__address">
               <p class="contacts__address-text">
                 ул. Большая<br>
-                Конюшенная, д 19/8
+                Конюшенная, д. 19/8
               </p>
               <p class="contacts__address-text">
                 Санкт-Петербург
