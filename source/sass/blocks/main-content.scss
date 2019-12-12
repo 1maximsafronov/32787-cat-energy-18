@@ -2,6 +2,11 @@
   margin-bottom: 22px;
 }
 
+.main-content__catalog {
+  padding-top: 15px;
+  margin-bottom: 28px;
+}
+
 .main-content__optional-catalog {
   margin-bottom: 35px;
 }
@@ -14,8 +19,13 @@
 
 
 @media ($tablet-width) {
+  .main-content__catalog {
+    padding-top: 58px;
+    margin-bottom: 67px;
+  }
+
   .main-content__optional-catalog {
-    margin-bottom: 85px;
+    margin-bottom: 75px;
   }
 
   .main-content__title {
@@ -26,9 +36,18 @@
 }
 
 @media ($desktop-width) {
+  .main-content__catalog {
+    padding-top: 75px;
+    margin-bottom: 9px;
+  }
+
   .main-content__title {
     margin: 0 auto;
     padding: 0 40px;
     width: 1300px;
+  }
+
+  .main-content__optional-catalog {
+    margin-bottom: 86px;
   }
 }

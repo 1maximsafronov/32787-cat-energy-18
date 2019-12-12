@@ -2,7 +2,7 @@
 .purpose__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  width: 320px;
+  min-width: 320px;
 }
 
 .purpose__list {
@@ -12,13 +12,57 @@
 }
 
 .purpose__item {
+  position: relative;
   margin-bottom: 20px;
   padding: 20px;
   background-color: $bg-gray;
+
+  &::before {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $bg-green;
+    content: "";
+  }
+
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+  }
+
+  &--weight-loss {
+    &::after {
+      top: 22px;
+      left: 30px;
+      width: 35px;
+      height: 49px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--weight-gain {
+    &::after {
+      top: 35px;
+      left: 13px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .purpose__title {
-  margin-top: 12px;
+  margin-top: 10px;
   margin-bottom: 30px;
   padding-left: 72px;
   color: $text-black;
@@ -32,7 +76,7 @@
 .purpose__text {
   margin: 0;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   border-bottom: 1px solid $border-light-gray;
   color: $text-dark-gray;
   font-size: 14px;
@@ -76,7 +120,7 @@
 @media ($tablet-width) {
   .purpose__wrapper {
     padding: 0 30px;
-    width: 768px;
+    min-width: 768px;
   }
 
   .purpose__item {
@@ -85,6 +129,36 @@
     padding-right: 285px;
     padding-bottom: 60px;
     padding-left: 52px;
+
+    &::before {
+      top: 92px;
+      right: 61px;
+      left: auto;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--weight-loss {
+      &::after {
+        top: 80px;
+        right: 92px;
+        left: auto;
+        width: 140px;
+        height: 194px;
+      }
+    }
+
+    &--weight-gain {
+      padding-right: 316px;
+
+      &::after {
+        top: 135px;
+        right: 28px;
+        left: auto;
+        width: 268px;
+        height: 112px;
+      }
+    }
   }
 
   .purpose__title {
@@ -126,6 +200,34 @@
     margin-bottom: 0;
     padding-right: 52px;
     width: 570px;
+
+    &::before {
+      top: 47px;
+      right: auto;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--weight-loss {
+      &::after {
+        top: 41px;
+        right: 92px;
+        left: 66px;
+        width: 70px;
+        height: 97px;
+      }
+    }
+
+    &--weight-gain {
+      &::after {
+        top: 69px;
+        right: auto;
+        left: 34px;
+        width: 134px;
+        height: 56px;
+      }
+    }
   }
 
   .purpose__title {

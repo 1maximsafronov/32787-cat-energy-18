@@ -7,8 +7,12 @@
 
 .social__link {
   display: block;
-  margin-right: 38px;
   text-decoration: none;
+  margin-right: 37px;
+
+  &:nth-child(2) {
+    margin-right: 40px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -48,7 +52,7 @@
 
 @media ($tablet-width) {
   .social__link {
-    margin-right: 28px;
+    margin-right: 33px;
   }
 
   .social__icon {
