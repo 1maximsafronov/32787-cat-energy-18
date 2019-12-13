@@ -147,19 +147,36 @@
             </div>
           </div>
           <div class="example__before-after">
-            <p class="example__picture">
-              <picture>
-                <!--[if IE 9]><video style="display: none;"><![endif]-->
-                <source type="image/webp" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x" media="(min-width: 1300px)">
-                <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x" media="(min-width: 768px)">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <div class="example__preview">
+              <p class="example__picture example__picture--before">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source type="image/webp" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                  <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
-                <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
-                  <!--[if IE 9]></video><![endif]-->
-                <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Сравниваем результаты Было и  Стало">
-              </picture>
-            </p>
+                  <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+                  <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                  <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Сравниваем результаты Было и  Стало">
+                </picture>
+
+              </p>
+              <p class="example__picture example__picture--after">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source type="image/webp" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                  <source type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                  <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+                  <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                  <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Сравниваем результаты Было и  Стало">
+                </picture>
+              </p>
+            </div>
+
             <div class="example__controls controls">
               <span class="controls__label">Было</span>
               <div class="controls__range">
