@@ -40,7 +40,10 @@
   background-position: 0 0;
   background-repeat: no-repeat;
 
-  &--no-js,
+  &--no-js {
+    display: none;
+  }
+
   &--open {
     margin-right: 3px;
     width: 18px;

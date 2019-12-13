@@ -70,7 +70,7 @@
   transform: translateX(-50%);
 }
 
-.example_cost {
+.example__cost {
   flex-grow: 1;
   margin: 0;
   text-align: center;
@@ -81,16 +81,16 @@
 }
 
 .example__preview {
+  position: relative;
   margin: 0;
   margin-bottom: 40px;
-  position: relative;
   height: 232px;
 }
 
 .example__picture {
-  margin: 0;
   position: absolute;
   overflow: hidden;
+  margin: 0;
 
   &--after {
     display: none;
@@ -185,7 +185,7 @@
     transform: translateX(0%);
   }
 
-  .example_cost {
+  .example__cost {
     text-align: right;
     font-size: 20px;
     line-height: 20px;
@@ -202,9 +202,9 @@
 
   .example__preview {
     position: relative;
-    width: 100%;
-    min-height: 517px;
     margin-bottom: 17px;
+    min-height: 517px;
+    width: 100%;
   }
 
   .example__image {
@@ -213,18 +213,18 @@
   }
 
   .example__picture {
-    margin: 0;
     display: flex;
+    margin: 0;
 
     &--before {
-      width: 354px;
       left: 0;
+      width: 354px;
     }
 
     &--after {
-      width: 354px;
-      justify-content: flex-end;
       right: 0;
+      justify-content: flex-end;
+      width: 354px;
 
       .example__image {
         margin-right: 2px;
@@ -236,23 +236,21 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-top: 21px;
-
     overflow-x: hidden;
+    padding-top: 21px;
   }
 
   .example__wrapper {
-    padding: 0;
-    padding-bottom: 71px;
     display: flex;
     justify-content: space-between;
-
+    padding: 0;
+    padding-bottom: 71px;
     padding-left: 40px;
     width: 1300px;
 
     &::before {
-      left: -2000px;
       right: 0;
+      left: -2000px;
     }
 
     &::after {
@@ -274,8 +272,8 @@
   }
 
   .example__text {
-    padding: 0;
     margin-bottom: 68px;
+    padding: 0;
   }
 
   .example__before-after {
@@ -284,22 +282,22 @@
   }
 
   .example__preview {
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    margin: 0;
     margin-bottom: 38px;
+    padding: 0;
   }
 
   .example__image {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .example__picture {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     width: 690px;
-    overflow: hidden;
 
     &--before {
       width: 365px;
@@ -332,7 +330,7 @@
     background-color: $bg-gray;
   }
 
-  .example_cost {
+  .example__cost {
     display: flex;
     flex-wrap: wrap;
 
