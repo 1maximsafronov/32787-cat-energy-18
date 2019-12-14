@@ -48,27 +48,3 @@ if(menu && menuToggle) {
 //   document.addEventListener('mousemove', onMouseMove);
 //   document.addEventListener('mouseup', onMouseUp);
 // });
-
-// для тачскрина
-// controlsToggle.addEventListener('touchstart', function(evnt) {
-//   evnt.preventDefault();
-//   startPointMin = evnt.pageX;
-//   function onTouchMove(moveEvnt) {
-//     moveEvnt.preventDefault();
-//     var newPoint = startPointMin - moveEvnt.pageX;
-//     startPointMin = moveEvnt.pageX;
-//     if ((controlsToggle.offsetLeft - newPoint) >= 0 && (controlsToggle.offsetLeft - newPoint) <= (428 - 34)) {
-//       controlsToggle.style.left = (controlsToggle.offsetLeft - newPoint) + 'px';
-//       // pictureBefore.style.width = (controlsToggle.offsetLeft - newPoint) + 'px';
-//       // pictureAfter.style.width = (400 - controlsToggle.offsetLeft - newPoint) + 'px';
-//     };
-//   };
-//
-//   function onTouchEnd(upEvnt) {
-//     upEvnt.preventDefault();
-//     document.removeEventListener('touchmove', onTouchMove);
-//     document.removeEventListener('touchend', onTouchEnd);
-//   };
-//   document.addEventListener('touchmove', onTouchMove);
-//   document.addEventListener('touchend', onTouchEnd);
-// });
