@@ -100,16 +100,16 @@ gulp.task("images", function () {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 // npx gulp webp
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "images", "webp", "css", "sprite", "html"))
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"))
 gulp.task("start", gulp.series("build", "server"));
