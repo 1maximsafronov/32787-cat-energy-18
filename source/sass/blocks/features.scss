@@ -1,4 +1,7 @@
-// features
+.features {
+  padding-bottom: 42px;
+}
+
 .features__wrapper {
   margin: 0 auto;
   padding: 0 20px;
@@ -6,10 +9,12 @@
 }
 
 .features__title {
-  margin-bottom: 35px;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .features__list {
+  margin: 0;
   padding: 0;
   color: $text-dark-gray;
   list-style: none;
@@ -21,6 +26,10 @@
   position: relative;
   display: flex;
   margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     display: block;
@@ -45,6 +54,7 @@
 
   &--cooking::before {
     background-image: url("../img/advantage-powder@1x.png");
+    background-position: 50% 40%;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-powder@2x.png");
@@ -54,6 +64,7 @@
 
   &--meal::before {
     background-image: url("../img/advantage-dining@1x.png");
+    background-position: 40% 50%;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-dining@2x.png");
@@ -78,12 +89,22 @@
 
 .features__desc {
   margin: 0;
+  padding-top: 2px;
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
+  .features {
+    padding-bottom: 52px;
+    border-bottom: 1px solid $border-light-light-gray;
+  }
+
   .features__wrapper {
     padding: 0 30px;
     min-width: 768px;
+  }
+
+  .features__title {
+    margin-bottom: 72px;
   }
 
   .features__list {
@@ -94,38 +115,72 @@
 
   .features__item {
     display: block;
-    margin-bottom: 139px;
-    width: 325px;
+    margin-bottom: 83px;
+    padding-right: 75px;
+    padding-bottom: 50px;
+    width: 324px;
+
+    &:nth-child(2n+1) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(4n+1) {
+      margin-bottom: 0;
+    }
 
     &::before {
       margin-right: 0;
-      margin-bottom: 60px;
+      margin-bottom: 32px;
       width: 80px;
       height: 80px;
     }
   }
 
+  .features__desc {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .features__number {
     position: absolute;
-    top: -26px;
-    left: 124px;
+    top: -40px;
+    left: 115px;
     z-index: -1;
     display: block;
     color: $bg-gray;
     font-weight: 400;
     font-size: 281px;
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $primary-font;
     line-height: 281px;
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
+  .features {
+    padding: 0;
+    border-bottom: none;
+  }
+
   .features__wrapper {
     padding: 0 40px;
     width: 1300px;
   }
 
   .features__item {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
     width: 245px;
+
+
+    &--cooking::before {
+      background-position: 50% 50%;
+    }
+
+    &--meal::before {
+      background-position: 50% 50%;
+    }
   }
 }

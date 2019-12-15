@@ -1,36 +1,11 @@
-// main-header
-
-
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .main-header {
     padding-top: 24px;
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .main-header {
     padding-top: 53.5px;
-
-
-    &--index-page::before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: -1;
-      display: block;
-      width: 50%;
-      height: 696px;
-      background-color: $bg-green-index-page;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      content: "";
-      transform: translateX(-1px);
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 720px auto;
-      }
-    }
   }
 }

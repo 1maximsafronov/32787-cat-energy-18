@@ -27,7 +27,7 @@
     background-image: url("../img/icon-tick.svg");
   }
 
-  @media ($tablet-width) {
+  @media (min-width: $tablet-width) {
     &::before {
       margin-right: 20px;
       width: 40px;

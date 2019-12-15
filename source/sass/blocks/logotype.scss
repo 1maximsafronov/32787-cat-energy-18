@@ -1,4 +1,3 @@
-// logotype
 .logotype,
 .logotype__image {
   display: block;
@@ -16,7 +15,7 @@
   }
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .logotype,
   .logotype__image {
     width: 173px;
@@ -24,10 +23,10 @@
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .logotype,
   .logotype__image {
     width: 202px;
-    height: 59.5px;
+    height: 59px;
   }
 }

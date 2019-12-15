@@ -1,21 +1,18 @@
-// variables
-$tablet-width: "min-width: 768px";
-$desktop-width: "min-width: 1300px";
+$tablet-width: 768px;
+$desktop-width: 1300px;
 $retina-dppx: 1.5dppx;
 
-// цвета
 $white:#ffffff;
 $black:#000000;
-$bg-gray:#f2f2f2;
+$text-light-black:#222222;
 $text-dark-gray: #444444;
 $text-black: #111111;
+$dark-gray: #666666;
+$bg-gray:#f2f2f2;
 $bg-green:#68b738;
 $bg-gray-dark:#dcdcdc;
-$dark-gray: #666666;
-$text-light-black:#222222;
-
 $bg-gree-dark:#5eaa2f;
-$bg-green-index-page:#63a73a;
+$bg-promo-green:#64a83b;
 $bg-gray-onemore:#eaeaea;
 $bg-light-gray:#ebebeb;
 $border-gray-darker:#bababa;
@@ -23,3 +20,7 @@ $border-gray:#cdcdcd;
 $border-gray-light:#ededed;
 $border-light-gray:#dadada;
 $border-light-light-gray:#e6e6e6;
+$form-invalid-color:#ff8282;
+
+$primary-font:"Oswald", "Arial", sans-serif;
+$secondary-font: "Arial", sans-serif;

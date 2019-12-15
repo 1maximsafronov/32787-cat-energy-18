@@ -1,9 +1,8 @@
-//
 .gift {
   position: relative;
   padding: 187px 50px 20px;
   min-height: 289px;
-  min-width: 280px;
+  width: 280px;
   background-color: $bg-gree-dark;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 50% 0;
@@ -32,7 +31,7 @@
   }
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .gift {
     padding-top: 72px;
     padding-left: 423px;
@@ -52,7 +51,7 @@
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .gift {
     margin: 0;
     padding: 0;

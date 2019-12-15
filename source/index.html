@@ -5,29 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Фукнциональное питание для котов. Занялся собой? Займись котом!">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- Спрайт begin -->
-    <svg style="display:none;">
-      <symbol id="icon-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12">
-        <path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9s.8-.4 1-.4h3.1l.7.3c.3.2.4.5.5.6.7 1.5 1.5 2.8 2.6 4 .1-.4.2-1.4.1-2.3l-.2-1a.8.8 0 00-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5l1.6.1c1.2.3 1.2 1.3 1.1 2.5v1.6l.1 1c.2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5l-.7.9c-.5.4-.9 1-.9 1.1l.9.9c1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.9zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9l.4-.1-.1-.1c-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1l.7-.8a9 9 0 001.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4l-.4-.1c-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4l-1.4-.1H10l-1.4.1.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3l-.4.1c-.6 0-1.3-.7-2.5-2.5L4.5 1.8l-.1-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4l.2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/>
-      </symbol>
-      <symbol id="icon-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19">
-        <path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2L7 5.8h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/>
-      </symbol>
-      <symbol id="icon-inst" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 16">
-        <path d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2A3.2 3.2 0 011 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2A4.2 4.2 0 000 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z" class="st0"/>
-        <path d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z" class="st0"/>
-        <circle cx="12.3" cy="3.7" r=".9" class="st0"/>
-      </symbol>
-      <symbol id="logo-htmlacademy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.94 34.09">
-        <path d="M13.62.02L13.47 0 0 1.41v24.66l13.47 8.02L26.9 26.1l.05-.03V1.42L13.62.01zm11.4 12.1L13.49 5.34v-.1l-.08.05-.1-.06v.11L1.94 12.12V3.15l11.54-1.21 11.55 1.2v8.99zM13.4 6.8l11.52 6.71-4.48 2.64-7.09-4.22-.01 1.41 5.9 3.52-.86.5-5.03-2.99-.01 1.42 3.82 2.27-.78.52-3.03-1.78-.01 1.41 1.85 1.1-1.8 1.07-11.36-6.75L13.41 6.8zM1.92 15.13l11.42 6.79.01 1.04-7.94-4.73-.02 1.42 7.98 4.8.02 1.07-7.97-4.74-.01 1.41 8.02 4.83.04.02 8.15-4.87-.02-5.18 3.42-2.03v10.02l-11.55 6.87-11.54-6.87v-9.85z"/>
-      </symbol>
-    </svg> <!-- Спрайт end -->
-    <!-- Шапка -->
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="main-header main-header--index-page ">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -54,9 +41,7 @@
         </ul>
       </nav>
     </header>
-    <!-- Контент страницы -->
     <main class="main-content">
-      <!-- 1 -->
       <section class="main-content__promo promo">
         <div class="promo__wrapper">
           <h1 class="promo__title page-title">Функциональное питание для котов</h1>
@@ -77,7 +62,6 @@
           <a class="promo__btn btn" href="form.html">Подобрать программу</a>
         </div>
       </section>
-      <!-- 2 -->
       <section class="main-content__purpose purpose">
         <div class="purpose__wrapper">
           <h2 class="visually-hidden">Назначение питания для кота. Похудение или набр массы.</h2>
@@ -95,7 +79,6 @@
           </ul>
         </div>
       </section>
-      <!-- 3 -->
       <section class="main-content__features features">
         <div class="features__wrapper">
           <h2 class="features__title section-title">Как это работает</h2>
@@ -114,49 +97,60 @@
             </li>
             <li class="features__item features__item--results">
               <span class="features__number">4</span>
-              <p class="features__desc">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="features__desc">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
             </li>
           </ul>
         </div>
       </section>
-      <!-- 4 -->
       <section class="main-content__example example">
         <div class="example__wrapper">
-          <div>
+          <div class="example__desc">
             <h2 class="example__title section-title">Живой пример</h2>
-            <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
             <div class="example__stats">
-              <!-- пока не определился как неймить классы тут и разметить толком -->
-              <div class="example__stats-wrapper">
-                <p class="example__stat">
-                  5 КГ
-                  <span class="example__stat-caption">снижение веса</span>
-                </p>
-                <p class="example__stat">
-                  60 дней
-                  <span class="example__stat-caption">затрачено времени</span>
-                </p>
-              </div>
-              <p class="example_cost">
-                Затраты на питание:
+              <p class="example__stat">
+                5 КГ
+                <span class="example__stat-caption">снижение веса</span>
+              </p>
+              <p class="example__stat">
+                60 дней
+                <span class="example__stat-caption">затрачено времени</span>
+              </p>
+              <p class="example__cost">
+                <span>Затраты на питание:</span>
                 <span class="example__price">15 000 руб</span>
               </p>
             </div>
           </div>
-          <div>
-            <p class="example__picture">
-              <picture>
-                <!--[if IE 9]><video style="display: none;"><![endif]-->
-                <source type="image/webp" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x" media="(min-width: 1300px)">
-                <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x" media="(min-width: 768px)">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+          <div class="example__before-after">
+            <div class="example__preview">
+              <p class="example__picture example__picture--before">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source type="image/webp" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                  <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
-                <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
-                  <!--[if IE 9]></video><![endif]-->
-                <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Сравниваем результаты Было и  Стало">
-              </picture>
-            </p>
+                  <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+                  <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                  <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Сравниваем результаты Было и  Стало">
+                </picture>
+              </p>
+              <p class="example__picture example__picture--after">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source type="image/webp" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                  <source type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                  <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+                  <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                  <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Сравниваем результаты Было и  Стало">
+                </picture>
+              </p>
+            </div><!-- /example__preview -->
             <div class="example__controls controls">
               <span class="controls__label">Было</span>
               <div class="controls__range">
@@ -165,11 +159,10 @@
               </div>
               <span class="controls__label">Стало</span>
             </div>
-          </div>
-        </div>
+          </div><!-- /example__before-after -->
+        </div><!-- /example__wrapper -->
       </section>
     </main>
-    <!-- Подвал -->
     <footer class="main-footer">
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
@@ -187,7 +180,7 @@
             </address>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5929364268327!2d30.318380354906466!3d59.938896522217405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574585001901!5m2!1sru!2sru" frameborder="1" style="border:0;" allowfullscreen="0"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5929364268327!2d30.318380354906466!3d59.938896522217405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574585001901!5m2!1sru!2sru" style="border:0;"></iframe>
       </section>
       <div class="main-footer__wrapper ">
         <a class="main-footer__logo footer-logotype">
@@ -202,7 +195,7 @@
           </a>
           <a class="social__link" href="#">
             <svg class="social__icon social__icon--inst" width="23" height="23">
-              <use xlink:href="#icon-inst"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
             <span class="visually-hidden">Наш Инстаграм</span>
           </a>
@@ -216,11 +209,11 @@
         <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__author">HTML Academy</span>
           <svg class="copyright__image" width="27" height="34">
-            <use xlink:href="#logo-htmlacademy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
   </body>
 </html>

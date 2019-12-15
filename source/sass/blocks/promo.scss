@@ -1,4 +1,3 @@
-// promo
 .promo__wrapper {
   margin: 0 auto;
   padding: 0 20px;
@@ -9,17 +8,17 @@
 .promo {
   position: relative;
   text-align: center;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
 
-  &::before {
+  &::after {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    z-index: -1;
+    z-index: -2;
     display: block;
     height: 305px;
-    background-color: #65a93c;
+    background-color: $bg-promo-green;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-position: 50% 0;
     background-repeat: no-repeat;
@@ -63,27 +62,27 @@
 }
 
 
-@media ($tablet-width) {
-  .promo__wrapper {
-    padding: 0 90px;
-    padding-top: 58px;
-    padding-bottom: 507px;
-    width: 768px;
-  }
-
+@media (min-width: $tablet-width) {
   .promo {
     position: relative;
     background-image: none;
     text-align: left;
 
-    &::before {
+    &::after {
       display: none;
     }
   }
 
+  .promo__wrapper {
+    padding-top: 58px;
+    padding-right: 120px;
+    padding-bottom: 507px;
+    padding-left: 119px;
+    width: 768px;
+  }
+
   .promo__title {
     margin-bottom: 41px;
-    width: 450px;
     color: $text-black;
     line-height: 60px;
   }
@@ -114,16 +113,53 @@
   }
 }
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
+  .promo {
+    position: static;
+    margin-bottom: 80px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      z-index: -2;
+      display: block;
+      width: 50%;
+      height: 696px;
+      background-color: $white;
+      content: "";
+    }
+
+    &::after {
+      top: 0;
+      left: 50%;
+      display: block;
+      width: 50%;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: 100% 0;
+      background-repeat: no-repeat;
+      content: "";
+      transform: translateX(-1px);
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
+    }
+  }
+
   .promo__wrapper {
-    padding: 0 80px;
+    position: relative;
     padding-top: 109px;
+    padding-right: 120px;
     padding-bottom: 246px;
+    padding-left: 120px;
     width: 1300px;
   }
 
-  .promo {
-    margin-bottom: 80px;
+  .promo__title {
+    width: 510px;
   }
 
   .promo__text {
