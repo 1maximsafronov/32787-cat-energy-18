@@ -50,14 +50,14 @@
         <p class="request-form__desc">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         <div class="request-form__wrapper">
           <div class="request-form__section request-form__section--column request-form__section--main-info ">
-            <p class="request-form__text-field custom-text-field">
+            <p class="request-form__text-field custom-text-field ">
               <label class="request-form__text-label" for="cat-name">Имя:*</label>
-              <input class="custom-text-field__input" type="text" name="cat-name" placeholder="Барсик" id="cat-name" required>
+              <input class="custom-text-field__input custom-text-field__input--required" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
               <span class="custom-text-field__icon"></span>
             </p>
             <p class="request-form__text-field custom-text-field">
-              <label class="request-form__text-label" for="cat-weight">Вес (кг):*</label>
-              <input class="custom-text-field__input" type="number" name="cat-weight" placeholder="7" id="cat-weight" required>
+              <label class="request-form__text-label request-form__text-label--required" for="cat-weight">Вес (кг):*</label>
+              <input class="custom-text-field__input custom-text-field__input--required" type="number" name="cat-weight" placeholder="7" id="cat-weight">
             </p>
             <p class="request-form__text-field custom-text-field">
               <label class="request-form__text-label" for="cat-age">Возраст&nbsp;(лет):</label>
@@ -86,14 +86,14 @@
           <div class="request-form__section request-form__section--contacts">
             <p class="request-form__text-field custom-text-field custom-text-field--email">
               <label class="request-form__text-label" for="cat-email">E-mail:*</label>
-              <input class="custom-text-field__input" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email" required>
+              <input class="custom-text-field__input custom-text-field__input--required" type="email" name="cat-email" placeholder="kuklachev@gmail.com" id="cat-email">
               <svg class="custom-text-field__icon custom-text-field__icon--mail" width="17" height="13">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </p>
             <p class="request-form__text-field custom-text-field custom-text-field--phone">
               <label class="request-form__text-label" for="cat-phone">Телефон:*</label>
-              <input class="custom-text-field__input" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone" required>
+              <input class="custom-text-field__input custom-text-field__input--required" type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone">
               <svg class="custom-text-field__icon custom-text-field__icon--phone" width="20" height="20">
                 <use xlink:href="#icon-phone"></use>
               </svg>

@@ -12,6 +12,23 @@ if(menu && menuToggle) {
   });
 }
 
+// проверка формы
+var form = document.querySelector('.request-form');
+var textFieldRequired = form.querySelectorAll('.custom-text-field__input--required');
+if(form && textFieldRequired) {
+  form.addEventListener("submit", function(evt) {
+    for (var i = 0; i < textFieldRequired.length; i++) {
+      if(!textFieldRequired[i].value) {
+        textFieldRequired[i].style.borderColor = "#ff8282";
+        var eror = 1;
+      }
+    }
+    if(eror) {
+      evt.preventDefault();
+    }
+  });
+}
+
 // // слайдер До После
 // var controls = document.querySelector('.controls');
 // var controlsToggle = controls.querySelector('.controls__toggle');
