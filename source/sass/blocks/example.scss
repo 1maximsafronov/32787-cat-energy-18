@@ -103,6 +103,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    overflow-x: hidden;
     background-color: transparent;
   }
 
@@ -124,12 +125,12 @@
 
     &::before {
       right: 50%;
-      left: 0;
+      left: -2000px;
       background-color: $bg-gray;
     }
 
     &::after {
-      right: 0;
+      right: -2000px;
       left: 50%;
       background-color: $bg-gray-onemore;
     }
@@ -233,7 +234,6 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    overflow-x: hidden;
     padding-top: 21px;
   }
 
@@ -247,11 +247,9 @@
 
     &::before {
       right: 0;
-      left: -2000px;
     }
 
     &::after {
-      right: -2000px;
       left: 975px;
     }
   }
