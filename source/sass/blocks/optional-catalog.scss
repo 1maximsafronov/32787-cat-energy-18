@@ -1,7 +1,11 @@
+.optional-catalog {
+  overflow-x: hidden;
+}
+
 .optional-catalog__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  width: 320px;
+  min-width: 320px;
 }
 
 .optional-catalog__list {
@@ -17,8 +21,7 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 34px;
-  padding-left: 20px;
-  width: 320px;
+
   color: $text-black;
   font-weight: 400;
   font-size: 24px;
@@ -30,14 +33,15 @@
     z-index: 1;
     display: inline-block;
     padding-right: 22px;
+    padding-left: 20px;
     background-color: $white;
   }
 
   &::before {
     position: absolute;
     top: 14px;
-    right: 0;
-    left: 20px;
+    right: -2000px;
+    left: -2000px;
     z-index: 0;
     display: block;
     height: 3px;
@@ -70,8 +74,6 @@
 
     &::before {
       top: 22px;
-      right: -2000px;
-      left: -2000px;
     }
 
     span {

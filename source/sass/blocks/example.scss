@@ -72,6 +72,7 @@
 .example__cost {
   flex-grow: 1;
   margin: 0;
+  color: $text-black;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -110,7 +111,7 @@
   .example__wrapper {
     position: relative;
     padding-top: 43px;
-    padding-bottom: 71px;
+    padding-bottom: 69px;
     width: 768px;
 
     &::before,
@@ -191,6 +192,7 @@
 
   .example__price {
     display: block;
+    margin-top: 10px;
   }
 
   .example__before-after {
@@ -200,7 +202,7 @@
 
   .example__preview {
     position: relative;
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     min-height: 517px;
     width: 100%;
   }
@@ -241,7 +243,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    padding-bottom: 71px;
+    padding-bottom: 69px;
     padding-left: 40px;
     width: 1300px;
 
@@ -279,7 +281,7 @@
   .example__preview {
     overflow: hidden;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     padding: 0;
   }
 
@@ -332,6 +334,10 @@
     span {
       margin-right: 64px;
     }
+  }
+
+  .example__price {
+    margin: 0;
   }
 
   .example__controls {

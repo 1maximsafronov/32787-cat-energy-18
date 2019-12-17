@@ -6,15 +6,26 @@
 
 .social__link {
   display: block;
-  margin-right: 37px;
   text-decoration: none;
-
-  &:nth-child(2) {
-    margin-right: 40px;
-  }
+  margin-right: 38px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: $bg-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .social__icon {
+      fill: $bg-green;
+    }
   }
 }
 
@@ -35,23 +46,17 @@
     width: 10px;
     height: 19px;
   }
-
-  &:hover,
-  &:focus {
-    fill: $bg-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-
-    fill: $bg-green;
-  }
 }
 
 
 @media (min-width: $tablet-width) {
   .social__link {
-    margin-right: 33px;
+    margin: 0;
+    margin-right: 29px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .social__icon {

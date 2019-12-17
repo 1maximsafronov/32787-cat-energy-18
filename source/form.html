@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="Фукнциональное питание для котов. Занялся собой? Займись котом!">
   <title>HTML Academy: Кэт энерджи - Подбор программы</title>
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js"></script>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -56,7 +57,7 @@
             <span class="custom-text-field__icon"></span>
           </p>
           <p class="request-form__text-field custom-text-field">
-            <label class="request-form__text-label request-form__text-label--required" for="cat-weight">Вес (кг):*</label>
+            <label class="request-form__text-label" for="cat-weight">Вес (кг):*</label>
             <input class="custom-text-field__input" type="number" name="cat-weight" placeholder="7" id="cat-weight" required>
           </p>
           <p class="request-form__text-field custom-text-field">
@@ -93,8 +94,8 @@
           </p>
           <p class="request-form__text-field custom-text-field custom-text-field--phone">
             <label class="request-form__text-label" for="cat-phone">Телефон:*</label>
-            <input class="custom-text-field__input " type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" id="cat-phone" required>
-            <svg class="custom-text-field__icon custom-text-field__icon--phone" width="20" height="20" pattern="[0-9]{,12}">
+            <input class="custom-text-field__input " type="tel" name="cat-phone" placeholder="8 (960) 900-60-90" pattern="[0-9]{1,12}" id="cat-phone" required>
+            <svg class="custom-text-field__icon custom-text-field__icon--phone" width="20" height="20">
               <use xlink:href="#icon-phone"></use>
             </svg>
           </p>
@@ -104,8 +105,8 @@
       <div class="request-form__wrapper">
         <div class="request-form__section request-form__section--comment">
           <p class="request-form__text-field custom-text-field">
-            <label class="visually-hidden">Напишите нам про кота</label>
-            <textarea class="request-form__comment-field custom-text-field__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <label class="visually-hidden" for="comment-about-cat">Напишите нам про кота</label>
+            <textarea class="request-form__comment-field custom-text-field__input" name="comment" placeholder="Расскажите обо всех повадках кота" id="comment-about-cat"></textarea>
           </p>
         </div><!-- /request-form__section -->
       </div><!-- /request-form__wrapper -->
