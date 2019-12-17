@@ -89,7 +89,7 @@
 
 .example__picture {
   position: absolute;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
 
   &--after {
@@ -205,20 +205,28 @@
     margin-bottom: 19px;
     min-height: 517px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .example__image {
-    margin-left: 16px;
+    display: block;
+    position: absolute;
     max-width: 690px;
   }
 
   .example__picture {
     display: flex;
+    position: relative;
     margin: 0;
 
     &--before {
       left: 0;
       width: 354px;
+
+      .example__image {
+        left: 16px;
+      }
     }
 
     &--after {
@@ -227,7 +235,7 @@
       width: 354px;
 
       .example__image {
-        margin-right: 2px;
+        right: 2px;
       }
     }
   }
@@ -279,7 +287,7 @@
   }
 
   .example__preview {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     margin-bottom: 40px;
     padding: 0;
@@ -291,7 +299,7 @@
   }
 
   .example__picture {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     width: 690px;
@@ -300,7 +308,7 @@
       width: 365px;
 
       .example__image {
-        margin: 0;
+        left: 0;
       }
     }
 
@@ -308,7 +316,7 @@
       width: 325px;
 
       .example__image {
-        margin: 0;
+        right: 0;
       }
     }
   }
