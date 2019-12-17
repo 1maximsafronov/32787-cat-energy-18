@@ -1,6 +1,7 @@
 .custom-checkbox {
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &::before {
     display: block;

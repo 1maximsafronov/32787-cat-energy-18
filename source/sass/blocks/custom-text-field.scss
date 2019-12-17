@@ -30,11 +30,18 @@
     }
   }
 
-  &:invalid {
-    border-color: $form-invalid-color;
+
+  &--required {
+    padding: 12px 14px;
+    padding-bottom: 11px;
+    border: 2px solid $form-invalid-color;
 
     & + .custom-text-field__icon {
       fill: $form-invalid-color;
+    }
+
+    &:focus {
+      border-color: $form-invalid-color;
     }
   }
 }
