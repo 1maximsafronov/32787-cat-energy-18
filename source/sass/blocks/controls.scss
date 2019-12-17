@@ -62,6 +62,7 @@
     padding: 0;
     font-size: 20px;
     line-height: 20px;
+    align-items: flex-end;
   }
 
   .controls__toggle {
@@ -72,6 +73,7 @@
 
   .controls__range {
     margin: 0;
+    margin-bottom: 12px;
     margin-right: 20px;
     margin-left: 23px;
     padding: 0;
@@ -85,6 +87,14 @@
   .controls__label {
     padding-bottom: 5px;
     border-bottom: 1px dotted $border-light-gray;
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-bottom-color: rgba(0, 0, 0, 0);
+    }
   }
 
   .controls__bar {

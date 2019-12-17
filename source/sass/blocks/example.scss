@@ -72,6 +72,7 @@
 .example__cost {
   flex-grow: 1;
   margin: 0;
+  color: $text-black;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -88,7 +89,7 @@
 
 .example__picture {
   position: absolute;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
 
   &--after {
@@ -103,13 +104,14 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    overflow-x: hidden;
     background-color: transparent;
   }
 
   .example__wrapper {
     position: relative;
     padding-top: 43px;
-    padding-bottom: 71px;
+    padding-bottom: 69px;
     width: 768px;
 
     &::before,
@@ -124,12 +126,12 @@
 
     &::before {
       right: 50%;
-      left: 0;
+      left: -2000px;
       background-color: $bg-gray;
     }
 
     &::after {
-      right: 0;
+      right: -2000px;
       left: 50%;
       background-color: $bg-gray-onemore;
     }
@@ -190,6 +192,7 @@
 
   .example__price {
     display: block;
+    margin-top: 10px;
   }
 
   .example__before-after {
@@ -199,23 +202,31 @@
 
   .example__preview {
     position: relative;
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     min-height: 517px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .example__image {
-    margin-left: 16px;
+    display: block;
+    position: absolute;
     max-width: 690px;
   }
 
   .example__picture {
     display: flex;
+    position: relative;
     margin: 0;
 
     &--before {
       left: 0;
       width: 354px;
+
+      .example__image {
+        left: 16px;
+      }
     }
 
     &--after {
@@ -224,7 +235,7 @@
       width: 354px;
 
       .example__image {
-        margin-right: 2px;
+        right: 2px;
       }
     }
   }
@@ -233,7 +244,6 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    overflow-x: hidden;
     padding-top: 21px;
   }
 
@@ -241,17 +251,15 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    padding-bottom: 71px;
+    padding-bottom: 69px;
     padding-left: 40px;
     width: 1300px;
 
     &::before {
       right: 0;
-      left: -2000px;
     }
 
     &::after {
-      right: -2000px;
       left: 975px;
     }
   }
@@ -279,9 +287,9 @@
   }
 
   .example__preview {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     padding: 0;
   }
 
@@ -291,7 +299,7 @@
   }
 
   .example__picture {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     width: 690px;
@@ -300,7 +308,7 @@
       width: 365px;
 
       .example__image {
-        margin: 0;
+        left: 0;
       }
     }
 
@@ -308,7 +316,7 @@
       width: 325px;
 
       .example__image {
-        margin: 0;
+        right: 0;
       }
     }
   }
@@ -334,6 +342,10 @@
     span {
       margin-right: 64px;
     }
+  }
+
+  .example__price {
+    margin: 0;
   }
 
   .example__controls {

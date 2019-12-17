@@ -1,4 +1,6 @@
 @import "normalize";
+@import "fonts.scss";
+@import "variables.scss";
 
 html {
   box-sizing: border-box;
@@ -21,8 +23,7 @@ img {
   max-width: 100%;
 }
 
-@import "variables.scss";
-@import "fonts.scss";
+
 @import "mixins.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/btn.scss";

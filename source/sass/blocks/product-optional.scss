@@ -24,6 +24,14 @@
   line-height: 16px;
 }
 
+.product-optional__link {
+  &,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 .product-optional__desc {
   margin: 0;
   margin-bottom: 14px;

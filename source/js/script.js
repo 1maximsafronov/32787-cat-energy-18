@@ -1,7 +1,7 @@
 var menu = document.querySelector('.main-nav__site-nav');
 var menuToggle = document.querySelector('.main-nav__toggle');
 //
-if(menu && menuToggle) {
+if (menu && menuToggle) {
   menu.classList.remove('main-nav__site-nav--no-js');
   menuToggle.classList.remove('main-nav__toggle--no-js');
 
@@ -14,22 +14,26 @@ if(menu && menuToggle) {
 
 // проверка формы
 var form = document.querySelector('.request-form');
-var textFieldRequired = form.querySelectorAll('.custom-text-field__input--required');
-if(form && textFieldRequired) {
+var textFieldRequired = form.querySelectorAll('.custom-text-field__input:required');
+if (form && textFieldRequired) {
+  form.setAttribute('novalidate', '');
   form.addEventListener("submit", function(evt) {
     for (var i = 0; i < textFieldRequired.length; i++) {
-      if(!textFieldRequired[i].value) {
-        textFieldRequired[i].style.borderColor = "#ff8282";
+      textFieldRequired[i].classList.remove('custom-text-field__input--required');
+    }
+    var textFieldInvalid = form.querySelectorAll('.custom-text-field__input:invalid');
+    if (textFieldInvalid.length > 0) {
+      evt.preventDefault();
+      for (var i = 0; i < textFieldInvalid.length; i++) {
+        textFieldInvalid[i].classList.add('custom-text-field__input--required');
         var eror = 1;
       }
-    }
-    if(eror) {
-      evt.preventDefault();
+      form.querySelector('.custom-text-field__input:invalid').focus();
     }
   });
 }
 
-// // слайдер До После
+//  слайдер До После
 // var controls = document.querySelector('.controls');
 // var controlsToggle = controls.querySelector('.controls__toggle');
 // var controlsRange = document.querySelector('.controls__range');
