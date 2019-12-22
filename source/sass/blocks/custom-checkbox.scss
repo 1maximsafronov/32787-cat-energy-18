@@ -5,6 +5,7 @@
 
   &::before {
     display: block;
+    flex-shrink: 0;
     margin-right: 16px;
     width: 30px;
     height: 30px;
