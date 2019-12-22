@@ -6,7 +6,9 @@
 
 .custom-text-field__input {
   flex-grow: 1;
-  padding: 13px 15px;
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-right: 50px;
   padding-bottom: 12px;
   min-width: 172px;
   outline: none;
@@ -21,7 +23,8 @@
   }
 
   &:focus {
-    padding: 12px 14px;
+    padding-top: 12px;
+    padding-left: 14px;
     padding-bottom: 11px;
     border: 2px solid $text-dark-gray;
 
@@ -32,7 +35,8 @@
 
 
   &--required {
-    padding: 12px 14px;
+    padding-top: 12px;
+    padding-left: 14px;
     padding-bottom: 11px;
     border: 2px solid $form-invalid-color;
 
@@ -75,13 +79,18 @@
 
 @media (min-width: $tablet-width) {
   .custom-text-field__input {
-    padding: 15px 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
     height: 52px;
     font-size: 20px;
     line-height: 20px;
 
-    &:focus {
-      padding: 14px 19px;
+    &:focus,
+    &--required {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 19px;
     }
   }
 }
