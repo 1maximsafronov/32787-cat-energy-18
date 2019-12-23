@@ -11,6 +11,7 @@
   font-size: 16px;
   font-family: $primary-font;
   line-height: 20px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -20,6 +21,16 @@
   &:active {
     background-color: $bg-gree-dark;
     color: rgba($white, 0.3);
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
   }
 
   &--gray {

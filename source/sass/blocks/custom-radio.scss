@@ -22,9 +22,12 @@
     content: "";
   }
 
-  &:hover::before,
-  input:focus + &::before {
+  &:hover::before {
     border-color: $border-gray-darker;
+  }
+
+  input:focus + &::before {
+    outline: 1px solid $text-dark-gray;
   }
 
   &:active,
