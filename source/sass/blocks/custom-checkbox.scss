@@ -16,7 +16,8 @@
     content: "";
   }
 
-  &:active {
+  &:active,
+  input:active + & {
     opacity: 0.3;
   }
 
@@ -27,6 +28,12 @@
 
   input:checked + &::before {
     background-image: url("../img/icon-tick.svg");
+  }
+
+  input:disabled + &,
+  &--disabled {
+    opacity: 0.3;
+    cursor: default;
   }
 
   @media (min-width: $tablet-width) {

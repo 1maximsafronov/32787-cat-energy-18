@@ -32,6 +32,12 @@
     opacity: 0.3;
   }
 
+  input:disabled + &,
+  &--disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
   @media (min-width: $tablet-width) {
     &::before {
       margin-right: 20px;
