@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 var del = require("del");
+var ghpages = require('gh-pages');
 var buildFolde = "build";
 
 // ---
@@ -122,6 +123,10 @@ gulp.task("webp", function () {
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
 });
+
+gulp.task("publish", function () {
+  return ghpages.publish(buildFolde, function(err) {});
+})
 
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html","jsmin"));
