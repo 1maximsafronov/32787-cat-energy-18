@@ -23,7 +23,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "node-normalize-scss": "8.0.x",
-    "posthtml-include": "^1.4.3",
+    "posthtml-include": "^1.6.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
